@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
                      :tag => s.version.to_s 
                     }
   s.source_files  = "APSiren/**/*.{h,m}", "APSiren/Factory/*.{h,m}" 
-  s.exclude_files = "APSiren/APSirenTests/**/*.{h,m}"
+  #s.exclude_files = "APSiren/APSirenTests/**/*.{h,m}"
   s.framework    = "Foundation", "XCTest"
 
   s.dependency 'Specta', '~> 0.4.0'
