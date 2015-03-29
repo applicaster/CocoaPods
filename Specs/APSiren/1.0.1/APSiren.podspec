@@ -18,11 +18,9 @@ Pod::Spec.new do |s|
   s.exclude_files = "APSiren/APSirenTests/**/*.{h,m}"
   s.framework    = "Foundation", "XCTest"
 
+  s.dependency 'Specta', '~> 0.4.0'
+  s.dependency 'Expecta', '~> 0.3.2'
   s.dependency 'OCMock', '~> 3.1.2'
-
-  #s.dependency 'Specta', '~> 0.4.0'
-  #s.dependency 'Expecta', '~> 0.3.2'
-  #s.dependency 'OCMock', '~> 3.1.2'
 
   s.requires_arc = true
   s.ios.xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '$(inherited) $(DEVELOPER_FRAMEWORKS_DIR) "$(PLATFORM_DIR)/Developer/Library/Frameworks" "$(DEVELOPER_DIR)/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks"' }
