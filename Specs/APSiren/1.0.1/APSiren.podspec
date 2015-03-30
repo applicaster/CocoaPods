@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
                      :git => 'https://github.com/applicaster/SirenParser-iOS.git',
                      :tag => s.version.to_s 
                     }
-  s.source_files  = "APSiren/**/*.{h,m}", "APSirenTests/**/*.{h,m}" 
+  s.source_files  = "APSiren/**/*.{h,m}"
   #s.exclude_files = "APSiren/APSirenTests/**/*.{h,m}"
   s.framework    = "Foundation", "XCTest"
 
