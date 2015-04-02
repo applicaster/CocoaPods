@@ -14,7 +14,8 @@ Pod::Spec.new do |s|
                      :git => 'https://github.com/applicaster/ApplicasterSDK-Static-Lite.git',
                      :tag => s.version.to_s 
                     }
-  s.source_files  = "Headers/**/*.h", "Resources/**/*.{xib,png}", "libApplicaster_Lite_Release.a"
+  s.source_files  = "Headers/**/*.h"
+  s.resources = "Resources/**/*.{xib,png}", "libApplicaster_Lite_Release.a"
   s.framework     = "Foundation"
 
   s.requires_arc = true
