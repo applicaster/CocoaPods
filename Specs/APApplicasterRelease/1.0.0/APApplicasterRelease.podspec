@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
   s.preserve_paths = "*"                    
 #  s.source_files = "ThirdParty/**/*.{h,m}"
-  s.resources = "Resources/**/*.{xib,png}", "./**"
+  s.resources = "Resources/**/*.{xib,png}"
   s.framework     = "Foundation"
 
   s.requires_arc = true
