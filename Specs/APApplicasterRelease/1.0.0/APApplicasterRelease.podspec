@@ -18,6 +18,7 @@ Pod::Spec.new do |s|
   s.framework     = "Foundation"
 
   s.requires_arc = true
-  s.ios.xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '$(inherited) $(DEVELOPER_FRAMEWORKS_DIR) "$(PLATFORM_DIR)/Developer/Library/Frameworks" "$(DEVELOPER_DIR)/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks"' , "HEADER_SEARCH_PATHS" => '"${PODS_ROOT}/ApplicasterHeaders"'
+  s.ios.xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '$(inherited) $(DEVELOPER_FRAMEWORKS_DIR) "$(PLATFORM_DIR)/Developer/Library/Frameworks" "$(DEVELOPER_DIR)/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks"' , "HEADER_SEARCH_PATHS" => '"${PODS_ROOT}/ApplicasterHeaders/**" '
    }
+
 end
