@@ -15,8 +15,8 @@ Pod::Spec.new do |s|
                      :tag => s.version.to_s 
                     }
 
-  s.preserve_paths = "*"                    
-#  s.source_files = "ThirdParty/**/*.{h,m}"
+ # s.preserve_paths = "*"       
+ # s.source_files = "ThirdParty/**/*.{h,m}"
   s.resources = "Resources/**"
   s.frameworks = 'Foundation' , 'AdSupport' , 'Accounts' , 'AudioToolbox' , 'AVFoundation' , 'CoreTelephony' , 'CoreMotion' , 'CoreMedia' , 'CoreLocation' , 'CoreData' , 'CoreText' , 'CFNetwork' , 'iAd' , 'Twitter' , 'QuartzCore' , 'MobileCoreServices' , 'MessageUI' , 'StoreKit' , 'SystemConfiguration' , 'Social' , 'Accelerate' , 'MediaPlayer' , 'AssetLibrary' , 'AddressBook' , 'QuickLook'
 
