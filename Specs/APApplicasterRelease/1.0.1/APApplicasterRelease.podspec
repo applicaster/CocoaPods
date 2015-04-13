@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
   s.preserve_paths = "*"                    
 #  s.source_files = "ThirdParty/**/*.{h,m}"
-  s.resources = "Resources/**"
+  s.resources = "Resources/**" , "ApplicasterHeaders/**"
   s.framework = 'Foundation' , 'AdSupport' , 'Accounts' , 'AudioToolbox' , 'AVFoundation' , 'CoreTelephony' , 'CoreMotion' , 'CoreMedia' , 'CoreLocation' , 'CoreData' , 'CoreText' , 'CFNetwork' , 'iAd' , 'Twitter' , 'QuartzCore' , 'MobileCoreServices' , 'MessageUI' , 'StoreKit' , 'SystemConfiguration' , 'Social' , 'Accelerate' , 'MediaPlayer' , 'AssetLibrary' , 'AddressBook' , 'MessageUI' , 'QuickLook'
 
   s.library = 'libiconv.dylib' , 'libresolv.dylib' , 'libxml2.dylib' , 'libsqlite3.0.dylib' , 'libz.dylib'
