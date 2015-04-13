@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
   s.library = 'libiconv.dylib' , 'libresolv.dylib' , 'libxml2.dylib' , 'libsqlite3.0.dylib' , 'libz.dylib'
   s.requires_arc = true
   s.ios.xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '$(inherited) $(DEVELOPER_FRAMEWORKS_DIR) "$(PLATFORM_DIR)/Developer/Library/Frameworks" "$(DEVELOPER_DIR)/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks"' }
-  s.ios.xcconfig = { "HEADER_SEARCH_PATHS" => '"${PODS_ROOT}/Headers"' }
+  s.ios.xcconfig = { "HEADER_SEARCH_PATHS" => '"${PODS_ROOT}/ApplicasterHeaders"' }
   s.ios.xcconfig = { "LIBRARY_SEARCH_PATHS" => '"${PODS_ROOT}/**"' }
   s.libraries = "Applicaster_Lite_Release", "AdManager"
 
