@@ -16,12 +16,12 @@ Pod::Spec.new do |s|
                     }
 
   s.preserve_paths = "*"    
- # s.source_files = "Classes/**/*.{h,m}"
+  #s.source_files = "Classes/**/*.{h,m}"
   # s.source_files = "ThirdParty/**/*.{h,m}"
   s.resources = "Resources/**"
   s.frameworks = 'Foundation' , 'AdSupport' , 'Accounts' , 'AudioToolbox' , 'AVFoundation' , 'CoreTelephony' , 'CoreMotion' , 'CoreMedia' , 'CoreLocation' , 'CoreData' , 'CoreText' , 'CFNetwork' , 'iAd' , 'Twitter' , 'QuartzCore' , 'MobileCoreServices' , 'MessageUI' , 'StoreKit' , 'SystemConfiguration' , 'Social' , 'Accelerate' , 'MediaPlayer' , 'AddressBook' , 'QuickLook'
 
- # s.libraries = 'libiconv' , 'libresolv' , 'libxml2' , 'libsqlite3.0' , 'libz'
+  #s.libraries = 'iconv' , 'resolv' , 'xml2' , 'sqlite3.0' , 'z'
   s.requires_arc = true
   s.ios.xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '$(inherited) $(DEVELOPER_FRAMEWORKS_DIR) "$(PLATFORM_DIR)/Developer/Library/Frameworks" "$(DEVELOPER_DIR)/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks"' }
   s.ios.xcconfig = { "HEADER_SEARCH_PATHS" => '"${PODS_ROOT}/ApplicasterHeaders"' }
@@ -30,6 +30,6 @@ Pod::Spec.new do |s|
   
   s.ios.vendored_library = 'libApplicaster_Lite_Release.a'
   s.ios.vendored_library = 'ThirdParty/FreeWheel/libAdManager.a'
-  s.prefix_header_contents = "#import <Applicaster/APApplicaster.h>"
+ # s.prefix_header_contents = "#import <Applicaster/APApplicaster.h>"
 
 end
