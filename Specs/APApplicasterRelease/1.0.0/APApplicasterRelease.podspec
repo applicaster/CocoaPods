@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
   s.library = 'xml2'
   s.library = 'sqlite3.0'
   s.library = 'z'
-  
+
   #s.libraries = 'iconv' , 'resolv' , 'xml2' , 'sqlite3.0' , 'z'
   s.requires_arc = true
   s.ios.xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '$(inherited) $(DEVELOPER_FRAMEWORKS_DIR) "$(PLATFORM_DIR)/Developer/Library/Frameworks" "$(DEVELOPER_DIR)/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks"' }
@@ -34,8 +34,6 @@ Pod::Spec.new do |s|
   s.ios.xcconfig = { "LIBRARY_SEARCH_PATHS" => '"${PODS_ROOT}/**"' }
   #s.libraries = "Applicaster_Lite_Release", "AdManager" 
   
-  s.ios.vendored_library = 'libApplicaster_Lite_Release.a'
-  s.ios.vendored_library = 'ThirdParty/FreeWheel/libAdManager.a'
- # s.prefix_header_contents = "#import <Applicaster/APApplicaster.h>"
+  s.ios.vendored_library = 'libApplicaster_Lite_Release.a', 'ThirdParty/FreeWheel/libAdManager.a'
 
 end
