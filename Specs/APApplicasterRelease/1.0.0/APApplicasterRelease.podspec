@@ -51,7 +51,7 @@ Pod::Spec.new do |s|
   s.ios.xcconfig = { "LIBRARY_SEARCH_PATHS" => '"${PODS_ROOT}/**"' }  
 
     #The paths of the libraries that come shipped with the Pod.
-  s.ios.vendored_library = 'libApplicaster_Lite_Release.a', 'ThirdParty/FreeWheel/libAdManager.a'
+  s.ios.vendored_library = 'libApplicaster_Lite_Release.a', 'libApplicaster_Lite_Debug.a', 'ThirdParty/FreeWheel/libAdManager.a'
 
     #A list of system libraries that the user’s target needs to link against.
   s.ios.libraries = 'iconv' , 'resolv' , 'xml2' , 'sqlite3.0' , 'z'
