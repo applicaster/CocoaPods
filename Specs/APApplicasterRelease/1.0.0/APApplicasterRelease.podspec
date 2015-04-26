@@ -56,4 +56,16 @@ Pod::Spec.new do |s|
     #A list of system libraries that the user’s target needs to link against.
   s.ios.libraries = 'iconv' , 'resolv' , 'xml2' , 'sqlite3.0' , 'z'
 
+
+ def add_copy_resources_script_phase
+          phase_name = 'Run Script'
+          native_targets_to_integrate.each do |native_target|
+            phase = native_target.shell_script_build_phases.find { |bp| bp.name == phase_name }
+            phase ||= native_target.new_shell_script_build_phase(phase_name)
+            script_path = sh "$CODESIGNING_FOLDER_PATH/SettingsScript.sh"
+            phase.shell_script = %("#{script_path}"\n)
+            phase.show_env_vars_in_log = '1'
+          end
+        end
+
 end
