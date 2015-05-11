@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
                      :tag => s.version.to_s 
                     }
   s.source_files  = "Components/**/*.{h,m}"  
-  s.ios.resource_bundle = { 'CAComponentsMapping' => 'ComponentsBundle/CAComponentsMapping.plist' }
+  s.ios.resource_bundle = { 'ComponentsBundle' => 'ComponentsBundle/CAComponentsMapping.plist' }
 
   s.framework     = "Foundation"
 
