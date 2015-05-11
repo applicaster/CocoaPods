@@ -14,7 +14,9 @@ Pod::Spec.new do |s|
                      :git => 'https://github.com/applicaster/ComponentsSDK-iOS.git',
                      :tag => s.version.to_s 
                     }
-  s.source_files  = "Components/**/*.{h,m}" , "ComponentsBundle/CAComponentsMapping.plist"  
+  s.source_files  = "Components/**/*.{h,m}"  
+  s.ios.resource_bundle = { 'CAComponentsMapping' => 'ComponentsBundle/CAComponentsMapping.plist' }
+
   s.framework     = "Foundation"
 
 
