@@ -43,29 +43,28 @@ Pod::Spec.new do |s|
     #Allows you to specify which source_files use ARC. This can either be the files which support ARC, or true to indicate all of the source_files use ARC.
   s.requires_arc = true
 
-    #xcconfig - any flag to add to the final xcconfig file.
-  s.ios.xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '$(inherited) $(DEVELOPER_FRAMEWORKS_DIR) "$(PLATFORM_DIR)/Developer/Library/Frameworks" "$(DEVELOPER_DIR)/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks"' }
+  s.default_subspec = 'Release'
 
-  s.ios.xcconfig = { "HEADER_SEARCH_PATHS" => '"${PODS_ROOT}/ApplicasterHeaders"' }
+s.subspec "Debug" do |sp|
+    sp.vendored_libraries = 'libApplicaster_Lite_Debug.a', 'ThirdParty/FreeWheel/libAdManager.a'
+    sp.library = 'Applicaster_Lite_Debug'
+#    sp.dependency 'APFeed2/Debug'
+    sp.libraries = 'z', 'xml2', 'sqlite3', 'resolv', 'iconv'
+ #   sp.source_files = ['**/ApplicasterHeaders/*.h','**/Third Party/FHSTwitterEngine/*.{h,m}']
+ #   sp.public_header_files = '**/Headers/Applicaster/*.h'
+    sp.resource = '**/Resources/*'
+    sp.exclude_files = '**/Resources/Settings.bundle'
+  end
 
-  s.ios.xcconfig = { "LIBRARY_SEARCH_PATHS" => '"${PODS_ROOT}/**"' }  
-
-    #The paths of the libraries that come shipped with the Pod.
-  s.ios.vendored_library = 'libApplicaster_Lite_Release.a', 'libApplicaster_Lite_Debug.a', 'ThirdParty/FreeWheel/libAdManager.a'
-
-    #A list of system libraries that the user’s target needs to link against.
-  s.ios.libraries = 'iconv' , 'resolv' , 'xml2' , 'sqlite3.0' , 'z'
-
-
- def add_copy_resources_script_phase
-          phase_name = 'Run Script'
-          native_targets_to_integrate.each do |native_target|
-            phase = native_target.shell_script_build_phases.find { |bp| bp.name == phase_name }
-            phase ||= native_target.new_shell_script_build_phase(phase_name)
-            script_path = sh "$CODESIGNING_FOLDER_PATH/SettingsScript.sh"
-            phase.shell_script = %("#{script_path}"\n)
-            phase.show_env_vars_in_log = '1'
-          end
-        end
+s.subspec "Release" do |sp|
+    sp.vendored_libraries = 'libApplicaster_Lite_Release.a', 'Third Party/FreeWheel/libAdManager.a'
+    sp.library = 'Applicaster_Lite_Release'  
+  #  sp.dependency 'APFeed2/Release'
+    sp.libraries = 'z', 'xml2', 'sqlite3', 'resolv', 'iconv'
+ #   sp.source_files = ['**/ApplicasterHeaders/*.h','**/Third Party/FHSTwitterEngine/*.{h,m}']
+ #   sp.public_header_files = '**/Headers/Applicaster/*.h'
+    sp.resource = '**/Resources/*'
+    sp.exclude_files = '**/Resources/Settings.bundle'
+  end
 
 end
