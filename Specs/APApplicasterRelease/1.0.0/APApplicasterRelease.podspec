@@ -43,28 +43,25 @@ Pod::Spec.new do |s|
     #Allows you to specify which source_files use ARC. This can either be the files which support ARC, or true to indicate all of the source_files use ARC.
   s.requires_arc = true
 
-  s.default_subspec = 'Release'
+    #xcconfig - any flag to add to the final xcconfig file.
+  s.ios.xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '$(inherited) $(DEVELOPER_FRAMEWORKS_DIR) "$(PLATFORM_DIR)/Developer/Library/Frameworks" "$(DEVELOPER_DIR)/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks"' }
+
+  s.ios.xcconfig = { "HEADER_SEARCH_PATHS" => '"${PODS_ROOT}/ApplicasterHeaders"' }
+
+  s.ios.xcconfig = { "LIBRARY_SEARCH_PATHS" => '"${PODS_ROOT}/**"' }  
+
+    #A list of system libraries that the user’s target needs to link against.
+  s.ios.libraries = 'iconv' , 'resolv' , 'xml2' , 'sqlite3.0' , 'z'
+
+s.default_subspec = 'Release'
 
 s.subspec "Debug" do |sp|
-    sp.vendored_libraries = 'libApplicaster_Lite_Debug.a', 'ThirdParty/FreeWheel/libAdManager.a'
-    sp.library = 'Applicaster_Lite_Debug'
-#    sp.dependency 'APFeed2/Debug'
-    sp.libraries = 'z', 'xml2', 'sqlite3', 'resolv', 'iconv'
- #   sp.source_files = ['**/ApplicasterHeaders/*.h','**/Third Party/FHSTwitterEngine/*.{h,m}']
- #   sp.public_header_files = '**/Headers/Applicaster/*.h'
-    sp.resource = '**/Resources/*'
-    sp.exclude_files = '**/Resources/Settings.bundle'
-  end
+ #The paths of the libraries that come shipped with the Pod.
+  sp.vendored_library = 'libApplicaster_Lite_Debug.a', 'ThirdParty/FreeWheel/libAdManager.a'
+end
 
-s.subspec "Release" do |sp|
-    sp.vendored_libraries = 'libApplicaster_Lite_Release.a', 'Third Party/FreeWheel/libAdManager.a'
-    sp.library = 'Applicaster_Lite_Release'  
-  #  sp.dependency 'APFeed2/Release'
-    sp.libraries = 'z', 'xml2', 'sqlite3', 'resolv', 'iconv'
- #   sp.source_files = ['**/ApplicasterHeaders/*.h','**/Third Party/FHSTwitterEngine/*.{h,m}']
- #   sp.public_header_files = '**/Headers/Applicaster/*.h'
-    sp.resource = '**/Resources/*'
-    sp.exclude_files = '**/Resources/Settings.bundle'
+  s.subspec "Release" do |sp|
+     sp.vendored_library = 'libApplicaster_Lite_Release.a', 'ThirdParty/FreeWheel/libAdManager.a'
   end
 
 end
