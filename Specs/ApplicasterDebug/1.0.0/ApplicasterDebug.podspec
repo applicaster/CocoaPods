@@ -54,6 +54,6 @@ Pod::Spec.new do |s|
   s.ios.libraries = 'iconv' , 'resolv' , 'xml2' , 'sqlite3.0' , 'z'
 
    #The paths of the libraries that come shipped with the Pod.
-  s.ios.vendored_library = 'libApplicaster_Lite_Debug.a', 'ThirdParty/FreeWheel/libAdManager.a'
+  s.ios.vendored_library = 'libApplicaster_Lite_Release.a', 'libApplicaster_Lite_Debug.a', 'ThirdParty/FreeWheel/libAdManager.a'
 
 end
