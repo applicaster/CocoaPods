@@ -46,9 +46,11 @@ Pod::Spec.new do |s|
     #xcconfig - any flag to add to the final xcconfig file.
   s.ios.xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '$(inherited) $(DEVELOPER_FRAMEWORKS_DIR) "$(PLATFORM_DIR)/Developer/Library/Frameworks" "$(DEVELOPER_DIR)/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks"' }
 
-  s.ios.xcconfig = { "HEADER_SEARCH_PATHS" => '"${PODS_ROOT}/Headers"' }
+  s.ios.xcconfig = { "HEADER_SEARCH_PATHS" => '"${PODS_ROOT}/ApplicasterHeaders"' }
 
   s.ios.xcconfig = { "LIBRARY_SEARCH_PATHS" => '"${PODS_ROOT}/**"' }  
+
+  PODS_PUBLIC_HEADERS_SEARCH_PATHS = "${PODS_ROOT}/ApplicasterHeaders" 
 
     #A list of system libraries that the user’s target needs to link against.
   s.ios.libraries = 'iconv' , 'resolv' , 'xml2' , 'sqlite3.0' , 'z'
