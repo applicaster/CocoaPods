@@ -50,6 +50,8 @@ Pod::Spec.new do |s|
 
   s.ios.xcconfig = { "LIBRARY_SEARCH_PATHS" => '"${PODS_ROOT}/**"' }  
 
+  PODS_PUBLIC_HEADERS_SEARCH_PATHS = "${PODS_ROOT}/ApplicasterHeaders/Advertising" "${PODS_ROOT}/ApplicasterHeaders/Applicaster"
+
     #A list of system libraries that the user’s target needs to link against.
   s.ios.libraries = 'iconv' , 'resolv' , 'xml2' , 'sqlite3.0' , 'z'
 
