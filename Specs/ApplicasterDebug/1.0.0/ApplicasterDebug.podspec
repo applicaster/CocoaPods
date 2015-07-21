@@ -40,17 +40,11 @@ Pod::Spec.new do |s|
     #A list of system frameworks that the user’s target needs to link against.
   s.frameworks = 'Foundation' , 'AdSupport' , 'Accounts' , 'AudioToolbox' , 'AVFoundation' , 'CoreTelephony' , 'CoreMotion' , 'CoreMedia' , 'CoreLocation' , 'CoreData' , 'CoreText' , 'CFNetwork' , 'iAd' , 'Twitter' , 'QuartzCore' , 'MobileCoreServices' , 'MessageUI' , 'StoreKit' , 'SystemConfiguration' , 'Social' , 'Accelerate' , 'MediaPlayer' , 'AddressBook' , 'QuickLook'
 
-    #Allows you to specify which source_files use ARC. This can either be the files which support ARC, or true to indicate all of the source_files use ARC.
+   #Allows you to specify which source_files use ARC. This can either be the files which support ARC, or true to indicate all of the source_files use ARC.
   s.requires_arc = true
 
     #xcconfig - any flag to add to the final xcconfig file.
-  s.ios.xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '$(inherited) $(DEVELOPER_FRAMEWORKS_DIR) "$(PLATFORM_DIR)/Developer/Librar//:configuration = Debug
-
-//:configuration = Release
-
-//:completeSettings = some
-REZ_SEARCH_PATHS
-y/Frameworks" "$(DEVELOPER_DIR)/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks"' }
+  s.ios.xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '$(inherited) $(DEVELOPER_FRAMEWORKS_DIR) "$(PLATFORM_DIR)/Developer/Library/Frameworks" "$(DEVELOPER_DIR)/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks"' }
 
   s.ios.xcconfig = { "HEADER_SEARCH_PATHS" => '"${PODS_ROOT}/ApplicasterHeaders"' }
 
