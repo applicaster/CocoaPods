@@ -35,7 +35,7 @@ Pod::Spec.new do |s|
   s.preserve_paths = "*"    
 
     #A list of resources that should be copied into the target bundle.
-  s.resources = "Resources/**"
+  s.resources = '**/Resources/*'
 
     #A list of system frameworks that the user’s target needs to link against.
   s.frameworks = 'Foundation' , 'AdSupport' , 'Accounts' , 'AudioToolbox' , 'AVFoundation' , 'CoreTelephony' , 'CoreMotion' , 'CoreMedia' , 'CoreLocation' , 'CoreData' , 'CoreText' , 'CFNetwork' , 'iAd' , 'Twitter' , 'QuartzCore' , 'MobileCoreServices' , 'MessageUI' , 'StoreKit' , 'SystemConfiguration' , 'Social' , 'Accelerate' , 'MediaPlayer' , 'AddressBook' , 'QuickLook'
@@ -50,9 +50,17 @@ Pod::Spec.new do |s|
 
   s.ios.xcconfig = { "LIBRARY_SEARCH_PATHS" => '"${PODS_ROOT}/**"' }  
 
+  s.ios.xcconfig = { "PODS_PUBLIC_HEADERS_SEARCH_PATHS" => '"${PODS_ROOT}/ApplicasterHeaders"' }  
+
+  s.public_header_files = '**/ApplicasterHeaders/Applicaster/*.h'
+  
+  s.source_files = ['**/ApplicasterHeaders/Applicaster/*.h','**/Third Party/FHSTwitterEngine/*.{h,m}']
+  
+  s.exclude_files = '**/Resources/Settings.bundle'
+
     #A list of system libraries that the user’s target needs to link against.
   s.ios.libraries = 'iconv' , 'resolv' , 'xml2' , 'sqlite3.0' , 'z'
-
+  
    #The paths of the libraries that come shipped with the Pod.
   s.vendored_library = 'libApplicaster_Lite_Release.a', 'ThirdParty/FreeWheel/libAdManager.a'
 

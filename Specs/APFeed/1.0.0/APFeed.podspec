@@ -33,8 +33,11 @@ Pod::Spec.new do |s|
    #Any file that should not be removed after being downloaded. By default, CocoaPods removes all files that are not matched by any of the other file pattern.
   s.preserve_paths = "*" 
 
+  #A list of resources that should be copied into the target bundle.
+  s.resources = '**/Resources/*'
+
    #The system frameworks that the user’s target needs to link against.
-  s.framework = "Foundation"
+  s.framework = 'Foundation'
 
    #Allows you to specify which source_files use ARC. This can either be the files which support ARC, or true to indicate all of the source_files use ARC.
   s.requires_arc = true
@@ -46,6 +49,10 @@ Pod::Spec.new do |s|
   
   s.ios.xcconfig = { "LIBRARY_SEARCH_PATHS" => '"${PODS_ROOT}/**"' }
   
+  s.public_header_files = '**/ApplicasterHeaders/*.h'
+  
+  s.source_files = ['**/ApplicasterHeaders/*.h']
+    
    #The paths of the libraries that come shipped with the Pod.
   s.ios.vendored_library = 'libAPFeed2_Release.a'
 

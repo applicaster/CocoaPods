@@ -40,7 +40,7 @@ Pod::Spec.new do |s|
     #A list of system frameworks that the user’s target needs to link against.
   s.frameworks = 'Foundation' , 'AdSupport' , 'Accounts' , 'AudioToolbox' , 'AVFoundation' , 'CoreTelephony' , 'CoreMotion' , 'CoreMedia' , 'CoreLocation' , 'CoreData' , 'CoreText' , 'CFNetwork' , 'iAd' , 'Twitter' , 'QuartzCore' , 'MobileCoreServices' , 'MessageUI' , 'StoreKit' , 'SystemConfiguration' , 'Social' , 'Accelerate' , 'MediaPlayer' , 'AddressBook' , 'QuickLook'
 
-    #Allows you to specify which source_files use ARC. This can either be the files which support ARC, or true to indicate all of the source_files use ARC.
+   #Allows you to specify which source_files use ARC. This can either be the files which support ARC, or true to indicate all of the source_files use ARC.
   s.requires_arc = true
 
     #xcconfig - any flag to add to the final xcconfig file.
@@ -49,6 +49,14 @@ Pod::Spec.new do |s|
   s.ios.xcconfig = { "HEADER_SEARCH_PATHS" => '"${PODS_ROOT}/ApplicasterHeaders"' }
 
   s.ios.xcconfig = { "LIBRARY_SEARCH_PATHS" => '"${PODS_ROOT}/**"' }  
+
+  s.ios.xcconfig = { "PODS_PUBLIC_HEADERS_SEARCH_PATHS" => '"${PODS_ROOT}/ApplicasterHeaders"' }  
+
+  s.public_header_files = '**/ApplicasterHeaders/Applicaster/*.h'
+  
+  s.source_files = ['**/ApplicasterHeaders/Applicaster/*.h','**/Third Party/FHSTwitterEngine/*.{h,m}']
+  
+  s.exclude_files = '**/Resources/Settings.bundle'
 
     #A list of system libraries that the user’s target needs to link against.
   s.ios.libraries = 'iconv' , 'resolv' , 'xml2' , 'sqlite3.0' , 'z'
