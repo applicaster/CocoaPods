@@ -52,9 +52,9 @@ Pod::Spec.new do |s|
 
   s.ios.xcconfig = { "PODS_PUBLIC_HEADERS_SEARCH_PATHS" => '"${PODS_ROOT}/ApplicasterHeaders"' }  
 
-  s.public_header_files = '**/ApplicasterHeaders/Applicaster/*.h'
+  s.public_header_files = '**/ApplicasterHeaders/Applicaster/*.h','**/ApplicasterHeaders/ApplicasterCore/*.h','**/ApplicasterHeaders/OpenSourceHeaders/*.h'
   
-  s.source_files = ['**/ApplicasterHeaders/Applicaster/*.h','**/Third Party/FHSTwitterEngine/*.{h,m}']
+  s.source_files = ['**/ApplicasterHeaders/Applicaster/*.h','**/ApplicasterHeaders/ApplicasterCore/*.h','**/ApplicasterHeaders/OpenSourceHeaders/*.h','**/Third Party/FHSTwitterEngine/*.{h,m}']
   
   s.exclude_files = '**/Resources/Settings.bundle'
 
