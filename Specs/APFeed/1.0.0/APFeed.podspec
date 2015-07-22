@@ -49,6 +49,8 @@ Pod::Spec.new do |s|
   
   s.ios.xcconfig = { "LIBRARY_SEARCH_PATHS" => '"${PODS_ROOT}/**"' }
   
+  s.ios.xcconfig = { "PODS_PUBLIC_HEADERS_SEARCH_PATHS" => '"${PODS_ROOT}/ApplicasterHeaders"' }  
+
   s.public_header_files = '**/ApplicasterHeaders/*.h'
   
   s.source_files = ['**/ApplicasterHeaders/*.h']
