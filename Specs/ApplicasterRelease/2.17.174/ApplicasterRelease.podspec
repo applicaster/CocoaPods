@@ -55,6 +55,10 @@ Pod::Spec.new do |s|
       ss.source_files = '**/ApplicasterHeaders/OpenSourceHeaders/*.h'
   end
 
+  #s.subspec 'ThirdParty' do |ss|
+   #   ss.source_files = ['**/ThirdParty/FHSTwitterEngine/*.{h,m}']
+  #end
+
     #xcconfig - any flag to add to the final xcconfig file.
   s.ios.xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '$(inherited) $(DEVELOPER_FRAMEWORKS_DIR) "$(PLATFORM_DIR)/Developer/Library/Frameworks" "$(DEVELOPER_DIR)/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks"' }
 
@@ -66,7 +70,7 @@ Pod::Spec.new do |s|
 
   #s.public_header_files = '**/ApplicasterHeaders/Applicaster/*.h','**/ApplicasterHeaders/ApplicasterCore/*.h','**/ApplicasterHeaders/OpenSourceHeaders/*.h'
   
-  #s.source_files = ['**/ApplicasterHeaders/Applicaster/*.h','**/ApplicasterHeaders/ApplicasterCore/*.h','**/ApplicasterHeaders/OpenSourceHeaders/*.h','**/Third Party/FHSTwitterEngine/*.{h,m}']
+  #s.source_files = ['**/ThirdParty/FHSTwitterEngine/*.{h,m}']
   
   s.exclude_files = '**/Resources/Settings.bundle'
 
