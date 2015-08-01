@@ -43,6 +43,8 @@ Pod::Spec.new do |s|
     #Allows you to specify which source_files use ARC. This can either be the files which support ARC, or true to indicate all of the source_files use ARC.
   s.requires_arc = true
 
+  #s.source_files = 'ThirdParty/FHSTwitterEngine/*.{h,m}'
+
   s.subspec 'Applicaster' do |ss|
       ss.source_files = '**/ApplicasterHeaders/Applicaster/*.h'
   end
