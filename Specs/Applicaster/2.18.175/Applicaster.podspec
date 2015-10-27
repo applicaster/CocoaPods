@@ -43,6 +43,7 @@ Pod::Spec.new do |s|
 	s.ios.libraries = 'iconv' , 'resolv' , 'xml2' , 'sqlite3.0' , 'z'
 
 	# Will add the framework to the project once the installation completes
-	s.ios.vendored_frameworks = 'Applicaster.framework'
+	s.preserve_paths = 'Applicaster.framework'
+	s.vendored_frameworks = 'Applicaster.framework'
 
 end
