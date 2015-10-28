@@ -30,7 +30,7 @@ Pod::Spec.new do |s|
 
 	# The location from where the library should be retrieved
 	s.source = { 
-    	"http" => "https://dl.bintray.com/sborkin/generic/ApplicasterFramework_2.18.175_Release.tgz"
+    	"http" => "https://dl.bintray.com/sborkin/generic/ApplicasterFramework_2.18.175_Release.zip"
 	}
 
 	# A list of system frameworks that the user’s target needs to link against.
