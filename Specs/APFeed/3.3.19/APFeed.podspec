@@ -45,6 +45,7 @@ Pod::Spec.new do |s|
 	# Will add the framework to the project once the installation completes
 	s.preserve_paths = 'APFeed.framework'
 	s.vendored_frameworks = 'APFeed.framework'
-	s.resource_bundle = { 'APFeedResources' => ['APFeed.framework/Resources/*'] }
+
+ 	s.resources = ["APFeed.framework/Resources/*"]
 
 end
