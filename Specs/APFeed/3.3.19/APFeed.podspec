@@ -46,6 +46,6 @@ Pod::Spec.new do |s|
 	s.preserve_paths = 'APFeed.framework'
 	s.vendored_frameworks = 'APFeed.framework'
 
- 	s.resources = ["APFeed.framework/Resources/**/*"]
+ 	s.resources = ["APFeed.framework/Resources/*"]
 
 end
