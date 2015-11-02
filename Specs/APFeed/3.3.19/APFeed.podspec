@@ -7,10 +7,11 @@ Pod::Spec.new do |s|
 	s.version = "3.3.19"
 
 	# The minimum deployment targets of the supported platforms
+	s.ios.platform = :ios
 	s.ios.deployment_target = "7.0"
 
 	# A short (maximum 140 characters) description of the Pod
-	s.summary = "APFeed sdk static lite"
+	s.summary = "APFeed SDK static lite"
 
 	# The description of the Pod
 	s.description = "Podspec of APFeed library"
@@ -26,8 +27,9 @@ Pod::Spec.new do |s|
 		LICENSE
 	}
 	
-	s.author = { "Miri Vecselboim" => "m.vecselboim@applicaster.com" }
-
+	s.author = { "Miri Vecselboim" => "m.vecselboim@applicaster.com",
+				 "Simon Borkin" => "s.borkin@applicaster.com" }
+				 
 	# The location from where the library should be retrieved
 	s.source = { 
     	"http" => "https://dl.bintray.com/applicaster-ltd/Stars-Team-iOS/APFeedFramework_3.3.19_Release.zip"
@@ -51,29 +53,12 @@ Pod::Spec.new do |s|
 
 	s.dependency 'HockeySDK', '~> 3.6'
 	s.dependency 'Facebook-iOS-SDK', '~> 3.20'
-	s.dependency 'Google-Mobile-Ads-SDK'
+	s.dependency 'Google-Mobile-Ads-SDK', '~>6.11.1'
 	s.dependency 'FlurrySDK', '~> 5.4'
 	s.dependency 'GoogleAnalytics-iOS-SDK', '~> 3.10'
 	s.dependency 'AFNetworking', '~> 2.4'
 	s.dependency 'TTTAttributedLabel', '~> 1.13.1'
 	s.dependency 'google-cast-sdk', '~> 2.5.2'
-	s.dependency 'Mixpanel'
-
-	s.dependency 'AWSCore'
-	s.dependency 'AWSAutoScaling'
-	s.dependency 'AWSCloudWatch'
-	s.dependency 'AWSDynamoDB'
-	s.dependency 'AWSEC2'
-	s.dependency 'AWSElasticLoadBalancing'
-	s.dependency 'AWSKinesis'
-	s.dependency 'AWSLambda'
-	s.dependency 'AWSMachineLearning'
-	s.dependency 'AWSMobileAnalytics'
-	s.dependency 'AWSS3'
-	s.dependency 'AWSSES'
-	s.dependency 'AWSSimpleDB'
-	s.dependency 'AWSSNS'
-	s.dependency 'AWSSQS'
-	s.dependency 'AWSCognito'
-
+	s.dependency 'Mixpanel', '~>2.9.0'
+	
 end
