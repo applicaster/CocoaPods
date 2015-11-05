@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
 	s.ios.deployment_target = "7.0"
 
 	# A short (maximum 140 characters) description of the Pod
-	s.summary = "APFeed SDK static lite"
+	s.summary = "APFeed SDK"
 
 	# The description of the Pod
 	s.description = "Podspec of APFeed library"
@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
 		Copyright 2015
 		LICENSE
 	}
-	
+
 	s.author = { "Miri Vecselboim" => "m.vecselboim@applicaster.com",
 				 "Simon Borkin" => "s.borkin@applicaster.com" }
 				 
@@ -38,7 +38,6 @@ Pod::Spec.new do |s|
 	# A list of system frameworks that the user’s target needs to link against.
 	s.frameworks = 'Foundation' , 'AdSupport' , 'Accounts' , 'AudioToolbox' , 'AVFoundation' , 'CoreTelephony' , 'CoreMotion' , 'CoreMedia' , 'CoreLocation' , 'CoreData' , 'CoreText' , 'CFNetwork' , 'iAd' , 'Twitter' , 'QuartzCore' , 'MobileCoreServices' , 'MessageUI' , 'StoreKit' , 'SystemConfiguration' , 'Social' , 'Accelerate' , 'MediaPlayer' , 'AddressBook' , 'QuickLook'
 
-
 	# Allows you to specify which source_files use ARC. This can either be the files which support ARC, or true to indicate all of the source_files use ARC
 	s.requires_arc = true
 
@@ -48,9 +47,9 @@ Pod::Spec.new do |s|
 	# Will add the framework to the project once the installation completes
 	s.preserve_paths = 'APFeed.framework'
 	s.vendored_frameworks = 'APFeed.framework'
-	s.vendored_libraries = 'APFeed.framework/libAdManager.a'
  	s.resources = ["APFeed.framework/Resources/*"]
 
+	s.dependency 'Applicaster', '=2.18.175'
 	s.dependency 'HockeySDK', '~> 3.6'
 	s.dependency 'Facebook-iOS-SDK', '~> 3.20'
 	s.dependency 'Google-Mobile-Ads-SDK', '~>6.11.1'
