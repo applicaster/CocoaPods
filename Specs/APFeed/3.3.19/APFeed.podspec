@@ -49,9 +49,9 @@ Pod::Spec.new do |s|
 	s.vendored_frameworks = 'APFeed.framework'
  	s.resources = ["APFeed.framework/Resources/*"]
 
-	s.dependency 'Applicaster', '=2.18.175'
+	s.dependency 'Applicaster', '=2.18.178'
 	s.dependency 'HockeySDK', '~> 3.6'
-	s.dependency 'Facebook-iOS-SDK', '~> 3.20'
+	s.dependency 'Facebook-iOS-SDK', '~> 3.20.0'
 	s.dependency 'Google-Mobile-Ads-SDK', '~>6.11.1'
 	s.dependency 'FlurrySDK', '~> 5.4'
 	s.dependency 'GoogleAnalytics-iOS-SDK', '~> 3.10'
