@@ -47,6 +47,7 @@ Pod::Spec.new do |s|
 	# Will add the framework to the project once the installation completes
 	s.preserve_paths = 'Applicaster.framework'
 	s.vendored_frameworks = 'Applicaster.framework'
+	s.vendored_libraries = 'Applicaster.framework/libAdManager.a'
  	s.resources = ["Applicaster.framework/Resources/*"]
 
 	# External frameworks
