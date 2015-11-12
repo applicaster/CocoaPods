@@ -49,14 +49,21 @@ Pod::Spec.new do |s|
 	s.vendored_frameworks = 'Applicaster.framework'
  	s.resources = ["Applicaster.framework/Resources/*"]
 
-	s.dependency 'HockeySDK', '~> 3.6'
-	s.dependency 'Facebook-iOS-SDK', '~> 3.20'
-	s.dependency 'Google-Mobile-Ads-SDK', '~>6.11.1'
-	s.dependency 'FlurrySDK', '~> 5.4'
+	# External frameworks
+	s.dependency 'FBSDKCoreKit', '= 4.7.0'
+	s.dependency 'FBSDKLoginKit', '= 4.7.0'
+	s.dependency 'FBSDKShareKit', '= 4.7.0'
+	
+	s.dependency 'google-cast-sdk', '~> 2.5.2'
 	s.dependency 'GoogleAnalytics-iOS-SDK', '~> 3.10'
+	s.dependency 'Google-Mobile-Ads-SDK', '~>6.11.1'
+
+	s.dependency 'HockeySDK', '~> 3.6'
+	s.dependency 'FlurrySDK', '~> 5.4'
+	
+	s.dependency 'Mixpanel', '~>2.9.0'
+
 	s.dependency 'AFNetworking', '~> 2.4'
 	s.dependency 'TTTAttributedLabel', '~> 1.13.1'
-	s.dependency 'google-cast-sdk', '~> 2.5.2'
-	s.dependency 'Mixpanel', '~>2.9.0'
 	
 end
