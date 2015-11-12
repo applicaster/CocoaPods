@@ -58,7 +58,7 @@ Pod::Spec.new do |s|
 	s.dependency 'GoogleAnalytics-iOS-SDK', '~> 3.10'
 	s.dependency 'Google-Mobile-Ads-SDK', '~>6.11.1'
 
-	s.dependency 'HockeySDK', '~> 3.6'
+#	s.dependency 'HockeySDK', '~> 3.6'
 	s.dependency 'FlurrySDK', '~> 5.4'
 	
 	s.dependency 'Mixpanel', '~>2.9.0'
