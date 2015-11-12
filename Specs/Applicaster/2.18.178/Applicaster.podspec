@@ -63,6 +63,7 @@ Pod::Spec.new do |s|
 	s.dependency 'FlurrySDK', '~> 5.4'
 	
 	s.dependency 'Mixpanel', '~>2.9.0'
+	s.dependency 'comScore-iOS-SDK'
 
 	s.dependency 'AFNetworking', '~> 2.4'
 	s.dependency 'TTTAttributedLabel', '~> 1.13.1'
