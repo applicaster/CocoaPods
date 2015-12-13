@@ -51,6 +51,8 @@ Pod::Spec.new do |s|
  	s.resources = ["Applicaster.framework/Resources/*"]
 
 	# External frameworks
+	s.dependency 'CocoaLumberjack', '= 1.9.2'
+
 	s.dependency 'FBSDKCoreKit', '= 4.7.0'
 	s.dependency 'FBSDKLoginKit', '= 4.7.0'
 	s.dependency 'FBSDKShareKit', '= 4.7.0'
