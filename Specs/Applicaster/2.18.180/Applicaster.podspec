@@ -58,11 +58,11 @@ Pod::Spec.new do |s|
 	s.dependency 'FBSDKShareKit', '= 4.7.0'
 	
 	s.dependency 'google-cast-sdk', '~> 2.5.2'
-	s.dependency 'GoogleAnalytics-iOS-SDK', '~> 3.10'
+	s.dependency 'GoogleAnalytics', '~> 3.14.0'
 	s.dependency 'Google-Mobile-Ads-SDK', '~>6.11.1'
 
 	s.dependency 'HockeySDK', '~> 3.6'
-	s.dependency 'FlurrySDK', '~> 5.4'
+	s.dependency 'Flurry-iOS-SDK', '~> 7.3.0'
 	
 	s.dependency 'Mixpanel', '~>2.9.0'
 	s.dependency 'comScore-iOS-SDK'
