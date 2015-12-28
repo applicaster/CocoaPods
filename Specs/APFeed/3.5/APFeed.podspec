@@ -49,6 +49,6 @@ Pod::Spec.new do |s|
 	s.vendored_frameworks = 'APFeed.framework'
  	s.resources = ["APFeed.framework/Resources/*"]
 
-	s.dependency 'Applicaster', '= 2.18.180'
+	s.dependency 'Applicaster', '= 2.18.181'
 	
 end
