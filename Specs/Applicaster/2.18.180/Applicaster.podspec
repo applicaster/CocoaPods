@@ -27,8 +27,10 @@ Pod::Spec.new do |s|
 		LICENSE
 	}
 
-	s.author = { "Miri Vecselboim" => "m.vecselboim@applicaster.com",
-				 "Simon Borkin" => "s.borkin@applicaster.com" }
+	s.author = {
+		"Miri Vecselboim" => "m.vecselboim@applicaster.com",
+		"Simon Borkin" => "s.borkin@applicaster.com"
+	}
 				 
 	# The location from where the library should be retrieved
 	s.source = { 
@@ -51,18 +53,16 @@ Pod::Spec.new do |s|
  	s.resources = ["Applicaster.framework/Resources/*"]
 
 	# External frameworks
-	s.dependency 'CocoaLumberjack', '= 1.9.2'
-
 	s.dependency 'FBSDKCoreKit', '= 4.7.0'
 	s.dependency 'FBSDKLoginKit', '= 4.7.0'
 	s.dependency 'FBSDKShareKit', '= 4.7.0'
 	
 	s.dependency 'google-cast-sdk', '~> 2.5.2'
-	s.dependency 'GoogleAnalytics', '~> 3.14.0'
+	s.dependency 'GoogleAnalytics-iOS-SDK', '~> 3.10'
 	s.dependency 'Google-Mobile-Ads-SDK', '~>6.11.1'
 
 	s.dependency 'HockeySDK', '~> 3.6'
-	s.dependency 'Flurry-iOS-SDK', '~> 7.3.0'
+	s.dependency 'FlurrySDK', '~> 5.4'
 	
 	s.dependency 'Mixpanel', '~>2.9.0'
 	s.dependency 'comScore-iOS-SDK'
