@@ -27,8 +27,10 @@ Pod::Spec.new do |s|
 		LICENSE
 	}
 
-	s.author = { "Miri Vecselboim" => "m.vecselboim@applicaster.com",
-				 "Simon Borkin" => "s.borkin@applicaster.com" }
+	s.author = {
+		"Miri Vecselboim" => "m.vecselboim@applicaster.com",
+		"Simon Borkin" => "s.borkin@applicaster.com"
+	}
 				 
 	# The location from where the library should be retrieved
 	s.source = { 
