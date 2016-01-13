@@ -69,7 +69,7 @@ Pod::Spec.new do |s|
 	s.dependency 'Mixpanel', '= 2.9.1'
 	s.dependency 'comScore-iOS-SDK', '= 3.1509.15'
 
-	s.dependency 'AFNetworking', '= 3.0.4'
+	s.dependency 'AFNetworking', '= 2.6.3'
 	s.dependency 'TTTAttributedLabel', '= 1.13.1'
 	
 end
