@@ -20,9 +20,18 @@ Pod::Spec.new do |s|
   #s.exclude_files = "**/*.h"
   s.framework     = "Foundation"
 
-  #s.dependency 'Specta', '~> 0.4.0'
-  #s.dependency 'Expecta', '~> 0.3.2'
-  #s.dependency 'OCMock', '~> 3.1.2'
+  s.dependency 'Mixpanel', '~> 2.9.1'
+  s.dependency 'Flurry-iOS-SDK/FlurrySDK', '~> 7.3.0'
+  s.dependency 'GoogleAnalytics', '~> 3.14.0'
+
+  s.dependency 'FBSDKCoreKit', '~> 4.9.0'
+  s.dependency 'FBSDKShareKit', '~> 4.9.0'
+  s.dependency 'FBSDKLoginKit', '~> 4.9.0'
+
+  s.dependency 'Google-Mobile-Ads-SDK', '~> 7.6.0'
+
+  s.dependency 'NKJWT', '~> 0.1.0'
+  s.dependency 'HockeySDK', '~> 3.8.5'
 
   s.requires_arc = true
   s.ios.xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '$(inherited) $(DEVELOPER_FRAMEWORKS_DIR) "$(PLATFORM_DIR)/Developer/Library/Frameworks" "$(DEVELOPER_DIR)/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks"' }
