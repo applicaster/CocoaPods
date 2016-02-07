@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
 
 	# The minimum deployment targets of the supported platforms
 	s.ios.platform = :ios
-	s.ios.deployment_target = "7.0"
+	s.ios.deployment_target = "8.0"
 
 	# A short (maximum 140 characters) description of the Pod
 	s.summary = "APCrossmates SDK"

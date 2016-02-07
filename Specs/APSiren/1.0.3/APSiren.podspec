@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name         = "APSiren"
   s.version      = "1.0.3"
-  s.ios.deployment_target = "7.0"
+  s.ios.deployment_target = "8.0"
   s.summary      = "APSiren Parser"
   s.description  = "APSiren Parser. Helps load JSON and parse it with Siren structure."
   s.homepage     = "https://github.com"
@@ -10,12 +10,12 @@ Pod::Spec.new do |s|
                         LICENSE
                    }
   s.author       = { "kononenkoAnton" => "anton@kenlo-group.com" }
-  s.source       = { 
+  s.source       = {
                      :git => 'https://github.com/applicaster/SirenParser-iOS.git',
-                     :tag => s.version.to_s 
+                     :tag => s.version.to_s
                     }
-  s.source_files  = "APSiren/**/*.{h,m}"  
-  s.public_header_files  = "APSiren/**/*.h"  
+  s.source_files  = "APSiren/**/*.{h,m}"
+  s.public_header_files  = "APSiren/**/*.h"
 
   #s.exclude_files = "APSiren/APSirenTests/**/*.h"
   s.framework     = "Foundation"
