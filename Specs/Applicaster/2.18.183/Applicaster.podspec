@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
 
 	# The minimum deployment targets of the supported platforms
 	s.ios.platform = :ios
-	s.ios.deployment_target = "8.0"
+	s.ios.deployment_target = "7.0"
 
 	# A short (maximum 140 characters) description of the Pod
 	s.summary = "Applicaster SDK"
@@ -34,7 +34,7 @@ Pod::Spec.new do |s|
 
 	# The location from where the library should be retrieved
 	s.source = {
-    	"http" => "https://dl.bintray.com/applicaster-ltd/Stars-Team-iOS/ApplicasterFramework_2.18.183_Release.zip"
+    	"http" => "https://dl.bintray.com/applicaster-ltd/Stars-Team-iOS/ApplicasterFramework_2.18.183_.zip"
 	}
 
 	# A list of system frameworks that the user’s target needs to link against.
