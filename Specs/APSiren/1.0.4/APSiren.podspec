@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
                    }
   s.author       = { "kononenkoAnton" => "a.kononenko@applicaster.com" }
   s.source       = {
-                     :git => 'https://github.com/applicaster/SirenParser-iOS.git',
+                     :git => 'git@github.com:applicaster/SirenParser-iOS.git',
                      :tag => s.version.to_s
                     }
   s.source_files  = "APSiren/**/*.{h,m}"
