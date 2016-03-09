@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
 	s.license = ''
 	s.author = "Applicaster LTD"
 	s.source = {
-    	"http" => "https://dl.bintray.com/applicaster-ltd/pods/ApplicasterSDK_Framework_3.0.0_c4646307c9c767da5bff4c694f4b6a911a0ddc0a.zip"
+    	"http" => "https://dl.bintray.com/applicaster-ltd/pods/ApplicasterSDK_Framework_3.0.0_6c4793d146067381b9aa375aea41ac8ec934e39e.zip"
 	}
 
 	s.frameworks = 'Foundation' , 'AdSupport' , 'Accounts' , 'AudioToolbox' , 'AVFoundation' , 'CoreTelephony' , 'CoreMotion' , 'CoreMedia' , 'CoreLocation' , 'CoreData' , 'CoreText' , 'CFNetwork' , 'iAd' , 'Twitter' , 'QuartzCore' , 'MobileCoreServices' , 'MessageUI' , 'StoreKit' , 'SystemConfiguration' , 'Social' , 'Accelerate' , 'MediaPlayer' , 'AddressBook' , 'QuickLook'
