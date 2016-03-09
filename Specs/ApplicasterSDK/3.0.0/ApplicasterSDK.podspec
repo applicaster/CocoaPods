@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
 	s.license = ''
 	s.author = "Applicaster LTD"
 	s.source = {
-    	"http" => "https://dl.bintray.com/applicaster-ltd/pods/ApplicasterSDK_Framework_3.0.0_507395984d5c6b9bc74e2d1d4ad7fd73db9a479e.zip"
+    	"http" => "https://dl.bintray.com/applicaster-ltd/pods/ApplicasterSDK_Framework_3.0.0_c4646307c9c767da5bff4c694f4b6a911a0ddc0a.zip"
 	}
 
 	s.frameworks = 'Foundation' , 'AdSupport' , 'Accounts' , 'AudioToolbox' , 'AVFoundation' , 'CoreTelephony' , 'CoreMotion' , 'CoreMedia' , 'CoreLocation' , 'CoreData' , 'CoreText' , 'CFNetwork' , 'iAd' , 'Twitter' , 'QuartzCore' , 'MobileCoreServices' , 'MessageUI' , 'StoreKit' , 'SystemConfiguration' , 'Social' , 'Accelerate' , 'MediaPlayer' , 'AddressBook' , 'QuickLook'
@@ -17,7 +17,8 @@ Pod::Spec.new do |s|
 	s.ios.libraries = 'iconv' , 'resolv' , 'xml2' , 'sqlite3.0' , 'z'
 	s.preserve_paths = 'ApplicasterSDK.framework'
 	s.vendored_frameworks = 'ApplicasterSDK.framework'
- 	s.resources = ["ApplicasterSDK.framework/*"]
+	s.public_header_files = 'ApplicasterSDK.framework/Headers/*.h'
+# 	s.resources = ["ApplicasterSDK.framework/*"]
 
 	# Public frameworks
 	s.dependency 'AFNetworking', '= 2.6.3'
