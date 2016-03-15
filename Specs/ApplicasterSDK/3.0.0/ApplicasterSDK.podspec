@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
 	s.license = ''
 	s.author = "Applicaster LTD"
 	s.source = {
-    	"http" => "https://dl.bintray.com/applicaster-ltd/pods/ApplicasterSDK_Framework_3.0.0_6c4793d146067381b9aa375aea41ac8ec934e39e.zip"
+    	"http" => "https://dl.bintray.com/applicaster-ltd/pods/ApplicasterSDK_Framework_3.0.0_c5e73a4a758eeedfb416b5c79da2561f22ce3734.zip"
 	}
 
 	s.frameworks = 'Foundation' , 'AdSupport' , 'Accounts' , 'AudioToolbox' , 'AVFoundation' , 'CoreTelephony' , 'CoreMotion' , 'CoreMedia' , 'CoreLocation' , 'CoreData' , 'CoreText' , 'CFNetwork' , 'iAd' , 'Twitter' , 'QuartzCore' , 'MobileCoreServices' , 'MessageUI' , 'StoreKit' , 'SystemConfiguration' , 'Social' , 'Accelerate' , 'MediaPlayer' , 'AddressBook' , 'QuickLook'
@@ -18,25 +18,25 @@ Pod::Spec.new do |s|
 	s.preserve_paths = 'ApplicasterSDK.framework'
 	s.vendored_frameworks = 'ApplicasterSDK.framework'
 	s.public_header_files = 'ApplicasterSDK.framework/Headers/*.h'
-# 	s.resources = ["ApplicasterSDK.framework/*"]
 
 	# Public frameworks
-	s.dependency 'AFNetworking', '= 2.6.3'
-	s.dependency 'CocoaLumberjack', '= 1.9.2'
-	s.dependency 'FBSDKCoreKit', '= 4.7.0'
-	s.dependency 'FBSDKLoginKit', '= 4.7.0'
-	s.dependency 'FBSDKShareKit', '= 4.7.0'
-	s.dependency 'GoogleAnalytics', '= 3.14.0'
-	s.dependency 'Google-Mobile-Ads-SDK', '= 7.6.0'
-	s.dependency 'HockeySDK', '= 3.8.5'
-	s.dependency 'Flurry-iOS-SDK', '= 7.3.0'
-	s.dependency 'Mixpanel', '~> 2.9.1'
-	s.dependency 'comScore-iOS-SDK', '= 3.1509.15'
+	s.dependency 'AFNetworking', '~> 2.6.3'
+	s.dependency 'CocoaLumberjack', '~> 1.9.2'
+	s.dependency 'FBSDKCoreKit', '~> 4.7.0'
+	s.dependency 'FBSDKLoginKit', '~> 4.7.0'
+	s.dependency 'FBSDKShareKit', '~> 4.7.0'
+	s.dependency 'GoogleAnalytics', '~> 3.14.0'
+	s.dependency 'Google-Mobile-Ads-SDK', '~> 7.6.0'
+	s.dependency 'GoogleAds-IMA-iOS-SDK-For-AdMob', '~> 3.1.0'
+	s.dependency 'HockeySDK', '~> 3.8.5'
+	s.dependency 'Flurry-iOS-SDK', '~> 7.3.0'
+	s.dependency 'Mixpanel', '~> 2.9.0'
+	s.dependency 'comScore-iOS-SDK', '~> 3.1509.15'
+	s.dependency 'TTTAttributedLabel', '~> 1.13.1'
 	s.dependency 'NKJWT', '~> 0.1.0'
 	s.dependency 'SHMKit', '~> 0.1.2'
 	s.dependency 'FormatterKit', '~> 1.8.0'
 	s.dependency 'SSZipArchive', '~> 1.1'
-	s.dependency 'TTTAttributedLabel', '= 1.13.1'
 
 	# Applicater's Private Pod frameworks
 	s.dependency 'APSiren', '~> 1.0.4'
