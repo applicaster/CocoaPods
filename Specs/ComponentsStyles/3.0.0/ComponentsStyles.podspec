@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
 		:git => 'git@github.com:applicaster/ComponentsStyles-iOS.git'
   }
 
-	# s.source_files  = 'ComponentStyles/**/*.swift'
+  s.source_files  = 'ComponentStyles/**/*.swift'
 
 	s.resources = [
 		'Resources/xibs/**/*.xib',
