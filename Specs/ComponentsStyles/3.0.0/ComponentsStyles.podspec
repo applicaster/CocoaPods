@@ -9,8 +9,7 @@ Pod::Spec.new do |s|
 	s.license = ''
 	s.author = "Applicaster LTD."
 	s.source       = {
-                     :git => 'git@github.com:applicaster/ComponentsStyles-iOS.git',
-                     :branch => 'master
+		:git => 'git@github.com:applicaster/ComponentsStyles-iOS.git'
   }
 
 	# s.source_files  = 'ComponentStyles/**/*.swift'
