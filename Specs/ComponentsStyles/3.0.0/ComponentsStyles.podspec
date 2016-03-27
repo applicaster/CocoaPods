@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
                      :branch => 'master
   }
 
-	s.source_files  = 'ComponentStyles/**/*.swift'
+	# s.source_files  = 'ComponentStyles/**/*.swift'
 
 	s.resources = [
 		'Resources/xibs/**/*.xib',
