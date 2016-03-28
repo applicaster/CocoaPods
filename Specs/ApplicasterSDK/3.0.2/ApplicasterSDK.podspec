@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
 	'CoreData' , 'CoreText' , 'CFNetwork' , 'Twitter' , 'QuartzCore' , 'MobileCoreServices' , 'QuickLook' , 'AssetsLibrary' ,
 	'MessageUI' , 'StoreKit' , 'SystemConfiguration' , 'Accelerate' , 'MediaPlayer' , 'AddressBook'
 	s.libraries = 'iconv' , 'resolv' , 'xml2' , 'sqlite3.0' , 'c++' , 'z'
-	s.requires_arc = true
+	s.public_header_files = ''
 	s.vendored_frameworks = 'ApplicasterSDK.framework'
 
 	# Public frameworks
