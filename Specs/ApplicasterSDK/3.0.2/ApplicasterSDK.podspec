@@ -17,9 +17,9 @@ Pod::Spec.new do |s|
 	'MessageUI' , 'StoreKit' , 'SystemConfiguration' , 'Accelerate' , 'MediaPlayer' , 'AddressBook'
 	s.libraries = 'iconv' , 'resolv' , 'xml2' , 'sqlite3.0' , 'c++' , 'z'
 	s.requires_arc = true
-	#s.preserve_paths = 'ApplicasterSDK.framework'
+	s.preserve_paths = 'ApplicasterSDK.framework'
 	s.vendored_frameworks = 'ApplicasterSDK.framework'
-	# s.public_header_files = 'ApplicasterSDK.framework/Headers/*.h'
+	s.public_header_files = 'ApplicasterSDK.framework/Headers/*.h'
 
 	# Public frameworks
 
