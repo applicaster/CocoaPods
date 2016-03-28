@@ -16,8 +16,10 @@ Pod::Spec.new do |s|
 	'CoreData' , 'CoreText' , 'CFNetwork' , 'Twitter' , 'QuartzCore' , 'MobileCoreServices' , 'QuickLook' , 'AssetsLibrary' ,
 	'MessageUI' , 'StoreKit' , 'SystemConfiguration' , 'Accelerate' , 'MediaPlayer' , 'AddressBook'
 	s.libraries = 'iconv' , 'resolv' , 'xml2' , 'sqlite3.0' , 'c++' , 'z'
-	s.public_header_files = ''
+	s.requires_arc = true
+	#s.preserve_paths = 'ApplicasterSDK.framework'
 	s.vendored_frameworks = 'ApplicasterSDK.framework'
+	# s.public_header_files = 'ApplicasterSDK.framework/Headers/*.h'
 
 	# Public frameworks
 
@@ -49,7 +51,5 @@ Pod::Spec.new do |s|
 
 	s.dependency 'MPNotificationView_Applicaster', '~> 1.1.2'
 	s.dependency 'FLAnimatedImage_Applicaster','~> 1.0.9'
-	s.user_target_xcconfig = { 'HEADER_SEARCH_PATHS' => '' }
-	s.pod_target_xcconfig = { 'HEADER_SEARCH_PATHS' => '' }
 
 end
