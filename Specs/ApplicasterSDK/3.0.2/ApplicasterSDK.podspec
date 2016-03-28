@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
 	}
 	s.frameworks = xml2'
 	s.requires_arc = true
-	s.preserve_paths = 'ApplicasterSDK.framework'
+	s.module_map = ''
 	s.vendored_frameworks = 'ApplicasterSDK.framework'
 
 	# Public frameworks
