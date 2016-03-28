@@ -16,10 +16,35 @@ Pod::Spec.new do |s|
 	'CoreData' , 'CoreText' , 'CFNetwork' , 'Twitter' , 'QuartzCore' , 'MobileCoreServices' , 'QuickLook' , 'AssetsLibrary' ,
 	'MessageUI' , 'StoreKit' , 'SystemConfiguration' , 'Accelerate' , 'MediaPlayer' , 'AddressBook'
 	s.libraries = 'iconv' , 'resolv' , 'xml2' , 'sqlite3.0' , 'c++' , 'z'
-	s.requires_arc = true
-	#s.preserve_paths = 'ApplicasterSDK.framework'
-	s.vendored_frameworks = 'ApplicasterSDK.framework'
-	s.public_header_files = 'ApplicasterSDK.framework/Headers/*.h'
+
+	s.public_header_files = 'ApplicasterSDK/**/*.h'
+	s.prefix_header_file = 'ApplicasterSDK-prefix.pch'
+	s.resources = [
+			'ApplicasterSDK/**/*.xib',
+			'ApplicasterSDK/**/*.plist',
+			'Resources/APLocalization.bundle',
+			'Resources/audio/*',
+			'Resources/images/**/*.png',
+			'Resources/SettingsBundle/*'
+		]
+
+	s.exclude_files = 'ApplicasterSDK/Info.plist'
+
+	s.xcconfig = { 'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES',
+								 'OTHER_LDFLAGS' => '$(inherited) -undefined dynamic_lookup',
+								 'ENABLE_BITCODE' => 'NO',
+								 'GCC_WARN_UNDECLARED_SELECTOR' => "NO"}
+
+	s.subspec 'arc' do |sp|
+		sp.source_files  = 'ApplicasterSDK/**/*.{h,m}'
+		sp.exclude_files = 'ApplicasterSDK/**/non-arc/*','**/*Tests.m'
+		sp.requires_arc = true
+	end
+
+	s.subspec 'non-arc' do |sp|
+		sp.source_files = 'ApplicasterSDK/**/non-arc/*'
+		sp.requires_arc = false
+	end
 
 	# Public frameworks
 
@@ -52,4 +77,4 @@ Pod::Spec.new do |s|
 	s.dependency 'MPNotificationView_Applicaster', '~> 1.1.2'
 	s.dependency 'FLAnimatedImage_Applicaster','~> 1.0.9'
 
-end
+	end
