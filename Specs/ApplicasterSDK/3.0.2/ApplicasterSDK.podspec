@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
 	s.requires_arc = true
 	#s.preserve_paths = 'ApplicasterSDK.framework'
 	s.vendored_frameworks = 'ApplicasterSDK.framework'
-	#s.public_header_files = 'ApplicasterSDK.framework/Headers/*.h'
+	s.public_header_files = 'ApplicasterSDK.framework/Headers/*.h'
 
 	# Public frameworks
 
