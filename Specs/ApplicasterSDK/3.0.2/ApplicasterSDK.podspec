@@ -51,8 +51,5 @@ Pod::Spec.new do |s|
 
 	s.dependency 'MPNotificationView_Applicaster', '~> 1.1.2'
 	s.dependency 'FLAnimatedImage_Applicaster','~> 1.0.9'
-	s.xcconfig = { 'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES',
-								 'OTHER_LDFLAGS' => '$(inherited) -undefined dynamic_lookup',
-								 'ENABLE_BITCODE' => 'NO'
-						 }
+
 end
