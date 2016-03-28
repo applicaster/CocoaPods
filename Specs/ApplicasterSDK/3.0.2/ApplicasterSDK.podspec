@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
 	# s.public_header_files = 'ApplicasterSDK.framework/Headers/*.h'
 
 	# Public frameworks
-
+	s.xcconfig = { 'HEADER_SEARCH_PATHS' => '' }
 	s.dependency 'AFNetworking', '~> 2.6.3'
 	s.dependency 'CocoaLumberjack', '~> 1.9.2'
 	s.dependency 'Flurry-iOS-SDK', '~> 7.3.0'
