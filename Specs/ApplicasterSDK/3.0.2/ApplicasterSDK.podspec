@@ -52,6 +52,7 @@ Pod::Spec.new do |s|
 
 	s.xcconfig = { 'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES',
 								 'OTHER_LDFLAGS' => '$(inherited) -undefined dynamic_lookup',
+								 'HEADER_SEARCH_PATHS' => '',
 								 'ENABLE_BITCODE' => 'NO',
 							 	 'GCC_WARN_UNDECLARED_SELECTOR' => "NO"}
 end
