@@ -11,16 +11,10 @@ Pod::Spec.new do |s|
 	s.source = {
     	"http" => "https://dl.bintray.com/applicaster-ltd/pods/ApplicasterSDK_Framework_3.0.2_4580ee9ea9ba9328279f7a665dbee9ad397aa69c.zip"
 	}
-	s.frameworks = 'Foundation' , 'EventKit' , 'EventKitUI' , 'WebKit' , 'AdSupport' , 'Accounts' , 'Social' ,
-	'AudioToolbox' , 'AVFoundation' , 'CoreTelephony' , 'CoreMotion' , 'CoreMedia' , 'CoreLocation' , 'iAd' ,
-	'CoreData' , 'CoreText' , 'CFNetwork' , 'Twitter' , 'QuartzCore' , 'MobileCoreServices' , 'QuickLook' , 'AssetsLibrary' ,
-	'MessageUI' , 'StoreKit' , 'SystemConfiguration' , 'Accelerate' , 'MediaPlayer' , 'AddressBook'
-	s.libraries = 'iconv' , 'resolv' , 'xml2' , 'sqlite3.0' , 'c++' , 'z'
+	s.frameworks = xml2'
 	s.requires_arc = true
-	#s.preserve_paths = 'ApplicasterSDK.framework'
+	s.preserve_paths = 'ApplicasterSDK.framework'
 	s.vendored_frameworks = 'ApplicasterSDK.framework'
-	# s.public_header_files = 'ApplicasterSDK.framework/Headers/*.h'
-	s.frameworks = 'ApplicasterSDK'
 
 	# Public frameworks
 	s.xcconfig = { 'HEADER_SEARCH_PATHS' => '' }
