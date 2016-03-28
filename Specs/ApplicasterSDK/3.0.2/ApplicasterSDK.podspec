@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
 	s.source = {
     	"http" => "https://dl.bintray.com/applicaster-ltd/pods/ApplicasterSDK_Framework_3.0.2_4580ee9ea9ba9328279f7a665dbee9ad397aa69c.zip"
 	}
-	s.frameworks = 'xml2'
+	s.libraries = 'xml2'
 	s.requires_arc = true
 	s.module_map = ''
 	s.vendored_frameworks = 'ApplicasterSDK.framework'
