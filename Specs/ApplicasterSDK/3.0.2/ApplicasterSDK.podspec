@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
 	#s.preserve_paths = 'ApplicasterSDK.framework'
 	# s.vendored_frameworks = 'ApplicasterSDK.framework'
 	# s.public_header_files = 'ApplicasterSDK.framework/Headers/*.h'
-	sp.source_files  = 'ApplicasterSDK.framework'
+	s.source_files  = 'ApplicasterSDK.framework'
 
 	# Public frameworks
 
