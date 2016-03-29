@@ -51,5 +51,5 @@ Pod::Spec.new do |s|
 
 	s.dependency 'MPNotificationView_Applicaster', '~> 1.1.2'
 	s.dependency 'FLAnimatedImage_Applicaster','~> 1.0.9'
-
+	s.xcconfig = { 'HEADER_SEARCH_PATHS' => '' }
 end
