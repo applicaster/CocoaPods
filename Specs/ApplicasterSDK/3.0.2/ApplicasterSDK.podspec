@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 	s.libraries = 'iconv' , 'resolv' , 'xml2' , 'sqlite3.0' , 'c++' , 'z'
 	s.requires_arc = true
 	#s.preserve_paths = 'ApplicasterSDK.framework'
-	s.vendored_frameworks = 'ApplicasterSDK.framework'
+	# s.vendored_frameworks = 'ApplicasterSDK.framework'
 	# s.public_header_files = 'ApplicasterSDK.framework/Headers/*.h'
 
 	# Public frameworks
@@ -51,5 +51,4 @@ Pod::Spec.new do |s|
 
 	s.dependency 'MPNotificationView_Applicaster', '~> 1.1.2'
 	s.dependency 'FLAnimatedImage_Applicaster','~> 1.0.9'
-	s.xcconfig = { 'HEADER_SEARCH_PATHS' => '' }
 end
