@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
     	"http" => "https://dl.bintray.com/applicaster-ltd/pods/testFramework_Framework_1.0_.zip"
 	}
 
-	s.vendored_frameworks = 'testFramework.framework'
+	s.vendored_frameworks = 'testFramework.framework'	
 
 	# Public frameworks
 	s.dependency 'SwiftyJSON'
