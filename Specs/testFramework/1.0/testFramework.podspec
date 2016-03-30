@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
 	}
 
 	 s.vendored_frameworks = 'testFramework.framework'
-	 s.header_dir = 'testFramework'
+	 s.header_dir = 'testFramework.framework/Headers'
 
 	# s.vendored_libraries = 'testFramework.framework'
 
