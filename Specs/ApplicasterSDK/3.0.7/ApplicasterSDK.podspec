@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
 	s.license = ''
 	s.author = "Applicaster LTD"
 	s.source = {
-    	"http" => "https://dl.bintray.com/applicaster-ltd/pods/ApplicasterSDK_Framework_3.0.7_afd8dd5b90439c157ecefda0760d1873516286d4.zip"
+    	"http" => "https://dl.bintray.com/applicaster-ltd/pods/ApplicasterSDK_Framework_3.0.7_a961d0e9edb1d5a759e690b3d9f9688f6c409308.zip"
 	}
 	s.frameworks = 'Foundation' , 'EventKit' , 'EventKitUI' , 'WebKit' , 'AdSupport' , 'Accounts' , 'Social' ,
 	'AudioToolbox' , 'AVFoundation' , 'CoreTelephony' , 'CoreMotion' , 'CoreMedia' , 'CoreLocation' , 'iAd' ,
@@ -43,7 +43,7 @@ Pod::Spec.new do |s|
 	s.dependency 'APSiren', '~> 1.0.4'
 	s.dependency 'e-planning', '~> 1.15'
 	s.dependency 'Freewheel', '~> 5.18.2'
-	s.dependency 'Appoxee', '~> 4.0.7'
+	s.dependency 'Appoxee', '= 3.2.7'
 	s.dependency 'Akamai-Analytics', '~> 1.3'
 	s.dependency 'MPNotificationView_Applicaster', '~> 1.1.2'
 	s.dependency 'FLAnimatedImage_Applicaster','~> 1.0.9'
