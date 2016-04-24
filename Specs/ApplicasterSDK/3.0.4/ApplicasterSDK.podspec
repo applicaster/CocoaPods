@@ -43,7 +43,7 @@ Pod::Spec.new do |s|
 	s.dependency 'APSiren', '~> 1.0.4'
 	s.dependency 'e-planning', '~> 1.15'
 	s.dependency 'Freewheel', '~> 5.18.2'
-	s.dependency 'Appoxee', '~> 4.0.7'
+	s.dependency 'Appoxee', '= 3.2.7'
 	s.dependency 'Akamai-Analytics', '~> 1.3'
 	s.dependency 'MPNotificationView_Applicaster', '~> 1.1.2'
 	s.dependency 'FLAnimatedImage_Applicaster','~> 1.0.9'
