@@ -16,5 +16,5 @@ Pod::Spec.new do |s|
 
 	s.vendored_frameworks = "APFeed.framework"
 
-	s.dependency "ApplicasterSDK", "=3.0.3"
+	s.dependency "ApplicasterSDK", "~> 3.0.7"
 end
