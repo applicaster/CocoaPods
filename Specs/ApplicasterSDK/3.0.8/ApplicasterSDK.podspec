@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
 	s.license = ''
 	s.author = "Applicaster LTD"
 	s.source = {
-    	"http" => "https://dl.bintray.com/applicaster-ltd/pods/ApplicasterSDK_Framework_3.0.8_96ee2fe794e3c616a9c3a9acc68e839d169bdf12.zip"
+    	"http" => "https://dl.bintray.com/applicaster-ltd/pods/ApplicasterSDK_Framework_3.0.8_8143c9ced114231900574e011d67226f084c8a66.zip"
 	}
 	s.frameworks = 'Foundation' , 'EventKit' , 'EventKitUI' , 'WebKit' , 'AdSupport' , 'Accounts' , 'Social' ,
 	'AudioToolbox' , 'AVFoundation' , 'CoreTelephony' , 'CoreMotion' , 'CoreMedia' , 'CoreLocation' , 'iAd' ,
