@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
 	s.name = "APFeed"
 	s.version = "3.5.4"
 
-	s.ios.platform = :ios
+	s.platform = :ios
 	s.ios.deployment_target = "8.0"
 	s.summary = "APFeed"
 	s.description = "APFeed framework"
