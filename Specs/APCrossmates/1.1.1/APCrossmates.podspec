@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
 	s.author = "Applicaster LTD."
 	
 	s.source = {
-		"http" => "https://dl.bintray.com/applicaster-ltd/pods/APCrossmates_Framework_1.1.1_227e3b4c68de24ed406c3b6cc7a8bf4ba25d7f36.zip"
+		"http" => "https://dl.bintray.com/applicaster-ltd/pods/APCrossmates_Framework_1.1.1_05a448643978d5767919cab4013f222e6096ea3a.zip"
 	}
 
 	s.vendored_frameworks = "APCrossmates.framework"
