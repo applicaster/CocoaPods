@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "APSiren"
-  s.version      = "1.1.1"
+  s.version      = "1.1.2"
   s.ios.deployment_target = "7.0"
   s.summary      = "APSiren Parser"
   s.description  = "APSiren Parser. Helps load JSON and parse it with Siren structure."
