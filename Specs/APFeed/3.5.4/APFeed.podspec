@@ -1,8 +1,9 @@
 Pod::Spec.new do |s|
 	s.name = "APFeed"
+
+	# The version is replaced with the tag when running the deploy script
 	s.version = "3.5.4"
 
-	s.ios.platform = :ios
 	s.ios.deployment_target = "8.0"
 	s.summary = "APFeed"
 	s.description = "APFeed framework"
@@ -11,10 +12,14 @@ Pod::Spec.new do |s|
 	s.author = "Applicaster LTD."
 	
 	s.source = {
-		"http" => "https://dl.bintray.com/applicaster-ltd/pods/APFeed_Framework_3.5.4_a26b136f60fcb7ee14a1bc10a81f79251f3332e2.zip"
+		"http" => "https://dl.bintray.com/applicaster-ltd/pods/APFeed_Framework_3.5.4_50e191719e4f2e2c40d414b274c9a809baee500e.zip"
 	}
 
 	s.vendored_frameworks = "APFeed.framework"
 
-	s.dependency "ApplicasterSDK", "~> 3.0.8"
+	s.xcconfig = { 'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES',
+								 'ENABLE_BITCODE' => 'NO'
+								 }
+
+	s.dependency "ApplicasterSDK", "= 3.0.13"
 end
