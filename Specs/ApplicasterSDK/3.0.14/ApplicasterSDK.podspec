@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
 	s.name = "ApplicasterSDK"
 
 	# The version is replaced with the tag when running the deploy script
-	s.version = "__version__"
+	s.version = "3.0.14"
 
 	s.ios.deployment_target = "8.0"
 	s.summary = "ApplicasterSDK"
