@@ -59,4 +59,6 @@ Pod::Spec.new do |s|
 	s.dependency 'MPNotificationView_Applicaster', '~> 1.1.2'
 	s.dependency 'FLAnimatedImage_Applicaster','~> 1.1.0'
 
+	s.dependency 'ZappAnalyticsPlugins', '= 0.4.0'
+
 end
