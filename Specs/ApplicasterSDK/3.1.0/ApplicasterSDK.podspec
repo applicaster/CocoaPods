@@ -23,17 +23,17 @@ Pod::Spec.new do |s|
 	s.vendored_frameworks = 'ApplicasterSDK.framework'
 
 	s.xcconfig = { 'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES',
-								 'OTHER_LDFLAGS' => '$(inherited) -objc -all_load -l"AdManager" -l"GoogleAnalytics" -framework "AppoxeeSDK" -framework "HockeySDK" -framework "GoogleMobileAds" -framework "GoogleInteractiveMediaAds"',    'ENABLE_BITCODE' => 'NO',
-									'GCC_WARN_UNDECLARED_SELECTOR' => "NO",
-									'FRAMEWORK_SEARCH_PATHS' => '$(inherited) "${PODS_ROOT}"/**',
-									'LIBRARY_SEARCH_PATHS' => '$(inherited) "${PODS_ROOT}"/**'
+								'OTHER_LDFLAGS' => '$(inherited) -objc -all_load -l"AdManager" -framework "AppoxeeSDK" -framework "GoogleMobileAds" -framework "HockeySDK" -framework "GoogleInteractiveMediaAds"',
+								'ENABLE_BITCODE' => 'NO',
+								'GCC_WARN_UNDECLARED_SELECTOR' => "NO",
+								'FRAMEWORK_SEARCH_PATHS' => '$(inherited) "${PODS_ROOT}"/**',
+								'LIBRARY_SEARCH_PATHS' => '$(inherited) "${PODS_ROOT}"/**'
 								}
 
 	# Public frameworks
 
-	s.dependency 'AFNetworking', '~> 2.6.3'
+	s.dependency 'AFNetworking', '~> 3.1.0'
 	s.dependency 'CocoaLumberjack/Swift'
-	s.dependency 'Mixpanel', '~> 2.9.0'
 	s.dependency 'TTTAttributedLabel', '~> 1.13.1'
 	s.dependency 'NKJWT', '~> 0.1.0'
 	s.dependency 'FormatterKit', '~> 1.8.0'
@@ -43,7 +43,6 @@ Pod::Spec.new do |s|
 	s.dependency 'FBSDKShareKit', '~> 4.11.0'
 	s.dependency 'FBNotifications'
 	s.dependency 'SSZipArchive', '~> 1.1'
-	s.dependency 'GoogleAnalytics', '~> 3.14.0'
 	s.dependency 'Firebase/Core', '~> 3.3.0'
         s.dependency 'Firebase/AdMob', '~> 3.3.0'
 	s.dependency 'GoogleAds-IMA-iOS-SDK-For-AdMob', '~> 3.2.1'
@@ -53,7 +52,7 @@ Pod::Spec.new do |s|
 	s.dependency 'APSiren', '~> 1.1.2'
 	s.dependency 'e-planning', '~> 1.15'
 	s.dependency 'Freewheel', '~> 5.18.2'
-	s.dependency 'Appoxee', '= 4.0.7'
+	s.dependency 'AppoxeeSDK', '~> 4.0.13'
 	s.dependency 'ZappPlugins', '~> 0.4.0'
 
 	s.dependency 'SHMKit_Applicaster', '~> 0.1.3'
