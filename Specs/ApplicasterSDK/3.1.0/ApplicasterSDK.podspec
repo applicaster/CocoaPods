@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
 	s.name = "ApplicasterSDK"
 
 	# The version is replaced with the tag when running the deploy script
-	s.version = "3.0.13"
+	s.version = "3.1.0"
 
 	s.ios.deployment_target = "8.0"
 	s.summary = "ApplicasterSDK"
@@ -54,7 +54,7 @@ Pod::Spec.new do |s|
 	s.dependency 'e-planning', '~> 1.15'
 	s.dependency 'Freewheel', '~> 5.18.2'
 	s.dependency 'Appoxee', '= 4.0.7'
-	s.dependency 'ZappPlugins', '~> 0.2.1'
+	s.dependency 'ZappPlugins', '~> 0.4.0'
 
 	s.dependency 'SHMKit_Applicaster', '~> 0.1.3'
 	s.dependency 'MPNotificationView_Applicaster', '~> 1.1.2'
