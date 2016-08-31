@@ -18,6 +18,7 @@ Pod::Spec.new do |s|
 	s.vendored_frameworks = "APFeed.framework"
 
 	s.xcconfig = { 'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES',
+								 'EMBEDDED_CONTENT_CONTAINS_SWIFT' => 'NO',
 								 'ENABLE_BITCODE' => 'NO'
 								 }
 
