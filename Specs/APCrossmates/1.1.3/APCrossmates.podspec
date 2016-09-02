@@ -10,13 +10,12 @@ Pod::Spec.new do |s|
 	s.author = "Applicaster LTD."
 
 	s.source = {
-		"http" => "https://dl.bintray.com/applicaster-ltd/pods/APCrossmates_Framework_1.1.3_9d4b44b25fe0503fd33490d64e7963c1abe577e3.zip"
+		"http" => "https://dl.bintray.com/applicaster-ltd/pods/APCrossmates_Framework_1.1.3_a0af90130911cd594c031a5062fa5cfff7da02ea.zip"
 	}
 
 	s.vendored_frameworks = "APCrossmates.framework"
 
 	s.xcconfig = { 'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES',
-								 'EMBEDDED_CONTENT_CONTAINS_SWIFT' => 'NO',
 								 'ENABLE_BITCODE' => 'NO'
 								 }
 
