@@ -19,5 +19,5 @@ Pod::Spec.new do |s|
 								 'ENABLE_BITCODE' => 'NO'
 								 }
 
-	s.dependency "ApplicasterSDK", "= 3.1.2"
+	s.dependency "ApplicasterSDK", "= 3.1.3"
 end
