@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
 		s.license = ''
 		s.author = "Applicaster LTD."
 		s.source = {
-      	"http" => "https://dl.bintray.com/applicaster-ltd/pods/ApplicasterSDK_Framework_3.1.7_cc48e8705274adc070133f8eb9b54824bb99894c.zip"
+      	"http" => "https://dl.bintray.com/applicaster-ltd/pods/ApplicasterSDK_Framework_3.1.7_2bfa56434928c885aa8cafe30565fd8741d1f3b6.zip"
   	}
 
 		s.frameworks = 'Foundation' , 'EventKit' , 'EventKitUI' , 'WebKit' , 'AdSupport' , 'Accounts' , 'Social' ,
@@ -61,5 +61,4 @@ Pod::Spec.new do |s|
 
 		# Integration ONLY
 		s.dependency 'ZappAnalyticsPlugins/Flurry','~> 0.4.5'
-		s.dependency 'ZappAnalyticsPlugins/GoogleAnalytics','~> 0.4.5'
-end
+	end
