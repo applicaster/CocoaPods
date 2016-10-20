@@ -33,7 +33,7 @@ Pod::Spec.new do |s|
 		# Public frameworks
 
 		s.dependency 'AFNetworking', '~> 3.1.0'
-		s.dependency 'CocoaLumberjack/Swift', '~> 2.3.0'
+		s.dependency 'CocoaLumberjack/Swift'
 		s.dependency 'TTTAttributedLabel', '~> 1.13.1'
 		s.dependency 'NKJWT', '~> 0.1.0'
 		s.dependency 'FormatterKit', '~> 1.8.0'
