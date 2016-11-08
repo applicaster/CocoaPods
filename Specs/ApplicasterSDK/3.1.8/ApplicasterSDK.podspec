@@ -11,8 +11,9 @@ Pod::Spec.new do |s|
 		s.license = ''
 		s.author = "Applicaster LTD."
 		s.source = {
-      	"http" => "https://dl.bintray.com/applicaster-ltd/pods/ApplicasterSDK_Framework_3.1.8_632869abffe04c9e0420344cc07d00e14c136bcb.zip"
-  	}
+			"http" => "https://dl.bintray.com/applicaster-ltd/pods/ApplicasterSDK_Framework_3.1.8_632869abffe04c9e0420344cc07d00e14c136bcb.zip"
+
+		}
 
 		s.frameworks = 'Foundation' , 'EventKit' , 'EventKitUI' , 'WebKit' , 'AdSupport' , 'Accounts' , 'Social' ,
 		'AudioToolbox' , 'AVFoundation' , 'CoreTelephony' , 'CoreMotion' , 'CoreMedia' , 'CoreLocation' , 'iAd' ,
@@ -27,7 +28,8 @@ Pod::Spec.new do |s|
 									'ENABLE_BITCODE' => 'NO',
 									'GCC_WARN_UNDECLARED_SELECTOR' => "NO",
 									'FRAMEWORK_SEARCH_PATHS' => '$(inherited) "${PODS_ROOT}"/**',
-									'LIBRARY_SEARCH_PATHS' => '$(inherited) "${PODS_ROOT}"/**'
+									'LIBRARY_SEARCH_PATHS' => '$(inherited) "${PODS_ROOT}"/**',
+									'SWIFT_VERSION' => '2.3'
 									}
 
 		# Public frameworks
@@ -44,7 +46,7 @@ Pod::Spec.new do |s|
 		s.dependency 'FBNotifications'
 		s.dependency 'SSZipArchive', '~> 1.1'
 		s.dependency 'Firebase/Core', '~> 3.3.0'
-	        s.dependency 'Firebase/AdMob', '~> 3.3.0'
+	  s.dependency 'Firebase/AdMob', '~> 3.3.0'
 		s.dependency 'GoogleAds-IMA-iOS-SDK-For-AdMob', '~> 3.2.1'
 
 		# Applicater's Private Pod frameworks
@@ -61,4 +63,4 @@ Pod::Spec.new do |s|
 
 		# Integration ONLY
 		s.dependency 'ZappAnalyticsPlugins/Flurry','~> 0.4.5'
-	end
+end
