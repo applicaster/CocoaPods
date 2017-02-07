@@ -59,17 +59,17 @@ Pod::Spec.new do |s|
 	s.dependency 'FBSDKLoginKit', '= 4.7.0'
 	s.dependency 'FBSDKShareKit', '= 4.7.0'
 	
-	s.dependency 'google-cast-sdk', '= 2.5.2'
+	s.dependency 'google-cast-sdk', '= 2.10.1'
 	s.dependency 'GoogleAnalytics', '= 3.14.0'
-	s.dependency 'Google-Mobile-Ads-SDK', '= 6.11.1'
+	s.dependency 'Google-Mobile-Ads-SDK', '= 7.6.0'
 
-	s.dependency 'HockeySDK', '= 3.6.4'
+	s.dependency 'HockeySDK', '= 3.8.5'
 	s.dependency 'Flurry-iOS-SDK', '= 7.3.0'
 	
-	s.dependency 'Mixpanel', '= 2.9.0'
+	s.dependency 'Mixpanel', '= 2.9.1'
 	s.dependency 'comScore-iOS-SDK', '= 3.1509.15'
 
-	s.dependency 'AFNetworking', '= 2.4.1'
+	s.dependency 'AFNetworking', '= 2.6.3'
 	s.dependency 'TTTAttributedLabel', '= 1.13.1'
 	
 end
