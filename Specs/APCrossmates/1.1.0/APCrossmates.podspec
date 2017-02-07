@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
 
 	# The minimum deployment targets of the supported platforms
 	s.ios.platform = :ios
-	s.ios.deployment_target = "7.0"
+	s.ios.deployment_target = "8.0"
 
 	# A short (maximum 140 characters) description of the Pod
 	s.summary = "APCrossmates SDK"
@@ -31,9 +31,9 @@ Pod::Spec.new do |s|
 		"Miri Vecselboim" => "m.vecselboim@applicaster.com",
 		"Simon Borkin" => "s.borkin@applicaster.com"
 	}
-				 
+
 	# The location from where the library should be retrieved
-	s.source = { 
+	s.source = {
     	"http" => "https://dl.bintray.com/applicaster-ltd/Stars-Team-iOS/APCrossmatesFramework_1.1.0_Release.zip"
 	}
 
@@ -45,12 +45,12 @@ Pod::Spec.new do |s|
 
 	# A list of system libraries that the user’s target needs to link against
 	s.ios.libraries = 'iconv' , 'resolv' , 'xml2' , 'sqlite3.0' , 'z'
-	
+
 	# Will add the framework to the project once the installation completes
 	s.preserve_paths = 'APCrossmates.framework'
 	s.vendored_frameworks = 'APCrossmates.framework'
  	s.resources = ["APCrossmates.framework/Resources/*"]
 
-	s.dependency 'Applicaster', '= 2.18.181'
-	
+	s.dependency 'Applicaster', '= 2.18.183'
+
 end
