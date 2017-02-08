@@ -28,24 +28,24 @@ Pod::Spec.new do |s|
 									'GCC_WARN_UNDECLARED_SELECTOR' => "NO",
 									'FRAMEWORK_SEARCH_PATHS' => '$(inherited) "${PODS_ROOT}"/**',
 									'LIBRARY_SEARCH_PATHS' => '$(inherited) "${PODS_ROOT}"/**',
-									'SWIFT_VERSION' => '3.0'
+									'SWIFT_VERSION' => '2.3'
 									}
 
 		# Public frameworks
 
 		s.dependency 'AFNetworking', '~> 3.1.0'
-		s.dependency 'CocoaLumberjack/Swift', '~> 3.0.0'
-		s.dependency 'TTTAttributedLabel', '~> 2.0.0'
+		s.dependency 'CocoaLumberjack/Swift', '~> 2.4.0'
+		s.dependency 'TTTAttributedLabel', '~> 1.13.1'
 		s.dependency 'NKJWT', '~> 0.1.0'
-		s.dependency 'FormatterKit', '~> 1.8.1'
-		s.dependency 'HockeySDK', '~> 4.1.3'
-		s.dependency 'FBSDKCoreKit', '~> 4.18.0'
-		s.dependency 'FBSDKLoginKit', '~> 4.18.0'
-		s.dependency 'FBSDKShareKit', '~> 4.18.0'
-		s.dependency 'FBNotifications', '~> 1.0.1'
-		s.dependency 'SSZipArchive', '~> 1.6.2'
-		s.dependency 'Firebase/Core', '~> 3.12.0'
-		s.dependency 'Firebase/AdMob', '~> 3.12.0'
+		s.dependency 'FormatterKit', '~> 1.8.0'
+		s.dependency 'HockeySDK', '~> 3.8.5'
+		s.dependency 'FBSDKCoreKit', '~> 4.11.0'
+		s.dependency 'FBSDKLoginKit', '~> 4.11.0'
+		s.dependency 'FBSDKShareKit', '~> 4.11.0'
+		s.dependency 'FBNotifications'
+		s.dependency 'SSZipArchive', '~> 1.1'
+		s.dependency 'Firebase/Core', '~> 3.3.0'
+	  s.dependency 'Firebase/AdMob', '~> 3.3.0'
 		s.dependency 'GoogleAds-IMA-iOS-SDK-For-AdMob', '~> 3.3.1'
 
 		# Applicater's Private Pod frameworks
@@ -54,12 +54,12 @@ Pod::Spec.new do |s|
 		s.dependency 'e-planning', '~> 1.15'
 		s.dependency 'Freewheel', '~> 5.18.2'
 		s.dependency 'AppoxeeSDK', '~> 4.0.13'
-		s.dependency 'ZappPlugins', '~> 1.0.6'
+		s.dependency 'ZappPlugins', '~> 0.8.0'
 
 		s.dependency 'SHMKit_Applicaster', '~> 0.1.3'
 		s.dependency 'MPNotificationView_Applicaster', '~> 1.1.2'
 		s.dependency 'FLAnimatedImage_Applicaster','~> 1.1.0'
 
 		# Integration ONLY
-		s.dependency 'ZappAnalyticsPlugins/Flurry','~> 1.0.3'
+		s.dependency 'ZappAnalyticsPlugins/Flurry','~> 0.4.5'
 end
