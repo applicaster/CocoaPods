@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
 		s.license = ''
 		s.author = "Applicaster LTD."
 		s.source = {
-      	"http" => "https://dl.bintray.com/applicaster-ltd/pods/ApplicasterSDK_Framework_4.3.0_dab265d03aab4f2e5b2035bdb2bcd72f46aede3c.zip"
+      	"http" => "https://dl.bintray.com/applicaster-ltd/pods/ApplicasterSDK_Framework_4.3.1_ad1a73e4374c34eefb2cd90a2361c083849cf4ee.zip"
   	}
 
 		s.frameworks = 'Foundation' , 'EventKit' , 'EventKitUI' , 'WebKit' , 'AdSupport' , 'Accounts' , 'Social' ,
@@ -54,12 +54,12 @@ Pod::Spec.new do |s|
 		s.dependency 'e-planning', '~> 1.15'
 		s.dependency 'Freewheel', '~> 5.18.2'
 		s.dependency 'AppoxeeSDK', '~> 4.0.13'
-		s.dependency 'ZappPlugins', '~> 1.6.0'
+		s.dependency 'ZappPlugins', '~> 1.5.0'
 
 		s.dependency 'SHMKit_Applicaster', '~> 0.1.3'
 		s.dependency 'MPNotificationView_Applicaster', '~> 1.1.2'
 		s.dependency 'FLAnimatedImage_Applicaster','~> 1.1.0'
 
 		# Integration ONLY
-		s.dependency 'ZappAnalyticsPlugins/Flurry','~> 1.6.0'
+		s.dependency 'ZappAnalyticsPlugins/Flurry','~> 1.5.0'
 end
