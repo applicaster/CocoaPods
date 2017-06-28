@@ -14,7 +14,9 @@ Pod::Spec.new do |s|
 	s.source = {
 			"http" => "https://dl.bintray.com/applicaster-ltd/pods/ComponentsSDK_Framework_3.0.2_b0bdeb770c77cee8288a396ef5d4574cae336ec8.zip"
 	}
-	
+
+	s.vendored_frameworks = 'ComponentsSDK.framework'
+
 	s.requires_arc = true
 	s.xcconfig = { 'ENABLE_BITCODE' => 'NO',
 							   'OTHER_SWIFT_FLAGS[config=Debug]' => '$(inherited) -D DEBUG',
