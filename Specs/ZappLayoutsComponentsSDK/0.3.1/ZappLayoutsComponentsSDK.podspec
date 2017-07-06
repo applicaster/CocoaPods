@@ -3,6 +3,7 @@ Pod::Spec.new do |s|
 
 	# The version is replaced with the tag when running the deploy script
 	s.version = "0.3.1"
+
 	s.platform = :ios
 	s.ios.deployment_target = "8.0"
 	s.summary = "ZappLayoutComponentsSDK"
@@ -10,9 +11,10 @@ Pod::Spec.new do |s|
 	s.homepage = "https://applicaster.com"
 	s.license = ''
 	s.author = "Applicaster LTD."
-	s.source       = {
-                     "http" => "https://dl.bintray.com/applicaster-ltd/pods/ZappLayoutsComponentsSDK_Framework_0.3.1_ce44c88bb7a4ba758abc3691884fffdda81417e0.zip"
+	s.source = {
+			"http" => "https://dl.bintray.com/applicaster-ltd/pods/ZappLayoutsComponentsSDK_Framework_0.3.1_ce44c88bb7a4ba758abc3691884fffdda81417e0.zip"
   }
+	
 	s.vendored_frameworks = 'ZappLayoutsComponentsSDK.framework'
 
 	s.requires_arc = true
