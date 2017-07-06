@@ -18,8 +18,11 @@ Pod::Spec.new do |s|
 	s.vendored_frameworks = "APFeed.framework"
 
 	s.xcconfig = { 'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES',
-								 'ENABLE_BITCODE' => 'NO'
+								 'ENABLE_BITCODE' => 'NO',
+								 'SWIFT_VERSION' => '3.0'
 								 }
 
-	s.dependency "ApplicasterSDK", "= 3.1.8"
+	s.dependency "ApplicasterSDK", "= 4.4.0"
+	s.dependency 'ZappHelpers', '~> 1.0.0'
+
 end
