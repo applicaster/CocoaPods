@@ -44,8 +44,8 @@ Pod::Spec.new do |s|
 		s.dependency 'FBSDKShareKit', '~> 4.18.0'
 		s.dependency 'FBNotifications', '~> 1.0.1'
 		s.dependency 'SSZipArchive', '~> 1.6.2'
-		s.dependency 'Firebase/Core', '~> 3.13.0'
-		s.dependency 'Firebase/AdMob', '~> 3.13.0'
+		s.dependency 'Firebase/Core', '~> 4.0.0'
+		s.dependency 'Firebase/AdMob', '~> 4.0.0'
 		s.dependency 'GoogleAds-IMA-iOS-SDK-For-AdMob', '~> 3.3.1'
 
 		# Applicater's Private Pod frameworks
@@ -54,12 +54,12 @@ Pod::Spec.new do |s|
 		s.dependency 'e-planning', '~> 1.15'
 		s.dependency 'Freewheel', '~> 5.18.2'
 		s.dependency 'AppoxeeSDK', '~> 4.0.13'
-		s.dependency 'ZappPlugins', '~> 1.7.0'
+		s.dependency 'ZappPlugins', '~> 1.8.0'
 
 		s.dependency 'SHMKit_Applicaster', '~> 0.1.3'
 		s.dependency 'MPNotificationView_Applicaster', '~> 1.1.2'
 		s.dependency 'FLAnimatedImage_Applicaster','~> 1.1.0'
 
 		# Integration ONLY
-		s.dependency 'ZappAnalyticsPlugins/Flurry','~> 1.6.0'
+		s.dependency 'ZappAnalyticsPlugins/Flurry','~> 1.7.0'
 end
