@@ -13,13 +13,4 @@ Pod::Spec.new do |s|
 
 	s.requires_arc = true
 	s.vendored_frameworks = 'ApplicasterUIKit.framework'
-
-	s.xcconfig = { 'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES',
-							'OTHER_LDFLAGS' => '$(inherited) -objc',
-							'ENABLE_BITCODE' => 'NO',
-							'GCC_WARN_UNDECLARED_SELECTOR' => "NO",
-							'FRAMEWORK_SEARCH_PATHS' => '$(inherited) "${PODS_ROOT}"/**',
-							'LIBRARY_SEARCH_PATHS' => '$(inherited) "${PODS_ROOT}"/**',
-							'SWIFT_VERSION' => '3.0'
-							}
 end
