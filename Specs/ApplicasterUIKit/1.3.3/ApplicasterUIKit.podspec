@@ -11,6 +11,9 @@ Pod::Spec.new do |s|
     	"http" => "https://dl.bintray.com/applicaster-ltd/pods/ApplicasterUIKit_Framework_1.3.3_db9b6f39faf1ceb32ff9f8d14ec9f796e7b59e79.zip"
 	}
 
+	s.xcconfig =  {
+		'SWIFT_VERSION' => '3.0'
+        }
 	s.requires_arc = true
 	s.vendored_frameworks = 'ApplicasterUIKit.framework'
 end
