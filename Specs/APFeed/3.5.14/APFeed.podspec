@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
 	s.author = "Applicaster LTD."
 
 	s.source = {
-		"http" => "https://dl.bintray.com/applicaster-ltd/pods/APFeed_Framework_3.5.13_43a5b3e8f324778294f1dfaa34fe049ff4c6af98.zip"
+		"http" => "https://dl.bintray.com/applicaster-ltd/pods/APFeed_Framework_3.5.13_58ac934902845aaf55d3ac9fd6d40453b7d42316.zip"
 	}
 
 	s.vendored_frameworks = "APFeed.framework"
