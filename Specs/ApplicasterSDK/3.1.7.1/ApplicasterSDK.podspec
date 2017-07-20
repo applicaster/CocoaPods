@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
 		s.license = ''
 		s.author = "Applicaster LTD."
 		s.source = {
-      	"http" => "https://dl.bintray.com/applicaster-ltd/pods/ApplicasterSDK_Framework_3.1.7_2bfa56434928c885aa8cafe30565fd8741d1f3b6.zip"
+      	"http" => "https://dl.bintray.com/applicaster-ltd/pods/ApplicasterSDK_Framework_3.1.7.1_cd7a6eecffc603a69b95eac54ba85415346f2ec3.zip"
   	}
 
 		s.frameworks = 'Foundation' , 'EventKit' , 'EventKitUI' , 'WebKit' , 'AdSupport' , 'Accounts' , 'Social' ,
