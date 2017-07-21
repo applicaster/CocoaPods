@@ -22,5 +22,4 @@ Pod::Spec.new do |s|
 								 }
 
 	s.dependency "ApplicasterSDK", "= 3.1.7.1"
-
 end
