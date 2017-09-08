@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
 								 'SWIFT_VERSION' => '3.0'}
 
 	s.dependency 'ApplicasterSDK', '~> 4.7.0'
-	s.dependency 'ApplicasterUIKit' '~> 1.4.0'
+	s.dependency 'ApplicasterUIKit', '~> 1.4.0'
 	s.dependency 'ZappPlugins', '~> 1.11.0'
 	s.dependency 'ZappHelpers', '~> 1.1.0'
 	s.dependency 'ZappAppConnector', '~> 1.1.0'
