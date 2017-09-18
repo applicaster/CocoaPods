@@ -52,7 +52,7 @@ Pod::Spec.new do |s|
 		s.dependency 'TwitterCore', '= 3.0.1'
 		s.dependency 'Toaster'
 
-		# Applicater's Private Pod frameworks
+		# Applicater's Private Pod frameworks 
 
 		s.dependency 'APSiren', '~> 1.1.2'
 		s.dependency 'e-planning', '~> 1.15'
