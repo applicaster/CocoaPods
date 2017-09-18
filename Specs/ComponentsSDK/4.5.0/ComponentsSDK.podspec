@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
 			"http" => "https://dl.bintray.com/applicaster-ltd/pods/ComponentsSDK_Framework_4.5.0_.zip"
 	}
 
-	s.vendored_frameworks = 'ComponentsSDK.framework'
+	s.vendored_frameworks = 'ComponentsSDK.framework' 
 
 	s.requires_arc = true
 	s.xcconfig = { 'ENABLE_BITCODE' => 'NO',
