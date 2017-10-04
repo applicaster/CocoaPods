@@ -12,17 +12,17 @@ Pod::Spec.new do |s|
 	s.license = ''
 	s.author = "Applicaster LTD."
 	s.source = {
-			"http" => "https://dl.bintray.com/applicaster-ltd/pods/ComponentsSDK_Framework_4.5.0_.zip"
+			"http" => "https://dl.bintray.com/applicaster-ltd/pods/ComponentsSDK_Framework_4.5.0_79d51a3aa19df08dd19ae86e8d11226ee5b60fda.zip"
 	}
 
-	s.vendored_frameworks = 'ComponentsSDK.framework' 
+	s.vendored_frameworks = 'ComponentsSDK.framework'
 
 	s.requires_arc = true
 	s.xcconfig = { 'ENABLE_BITCODE' => 'NO',
 							   'OTHER_SWIFT_FLAGS[config=Debug]' => '$(inherited) -D DEBUG',
 								 'SWIFT_VERSION' => '3.0'}
 
-	s.dependency 'ApplicasterSDK', '~> 4.8.0'
+	s.dependency 'ApplicasterSDK', '~> 4.7.0'
 	s.dependency 'ApplicasterUIKit', '~> 1.4.0'
 	s.dependency 'ZappPlugins', '~> 1.11.0'
 	s.dependency 'ZappHelpers', '~> 1.1.0'
