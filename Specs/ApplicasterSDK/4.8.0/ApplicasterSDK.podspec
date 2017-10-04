@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
 		s.license = ''
 		s.author = "Applicaster LTD."
 		s.source = {
-      	"http" => "https://dl.bintray.com/applicaster-ltd/pods/ApplicasterSDK_Framework_4.8.0_.zip"
+      	"http" => "https://dl.bintray.com/applicaster-ltd/pods/ApplicasterSDK_Framework_4.8.0_087439f329b18c3c128afe9eb6e16bf280e31c47.zip"
   	}
 
 		s.frameworks = 'Foundation' , 'EventKit' , 'EventKitUI' , 'WebKit' , 'AdSupport' , 'Accounts' , 'Social' ,
@@ -52,7 +52,7 @@ Pod::Spec.new do |s|
 		s.dependency 'TwitterCore', '= 3.0.1'
 		s.dependency 'Toaster'
 
-		# Applicater's Private Pod frameworks 
+		# Applicater's Private Pod frameworks
 
 		s.dependency 'APSiren', '~> 1.1.2'
 		s.dependency 'e-planning', '~> 1.15'
@@ -65,5 +65,5 @@ Pod::Spec.new do |s|
 		s.dependency 'FLAnimatedImage_Applicaster','~> 1.1.0'
 
 		# Integration ONLY
-		s.dependency 'ZappAnalyticsPlugins/Flurry','~> 1.11.0'
+		s.dependency 'ZappAnalyticsPlugins/Flurry','~> 1.10.0'
 end
