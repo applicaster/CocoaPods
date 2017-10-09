@@ -65,5 +65,5 @@ Pod::Spec.new do |s|
 		s.dependency 'FLAnimatedImage_Applicaster','~> 1.1.0'
 
 		# Integration ONLY
-		s.dependency 'ZappAnalyticsPlugins/Flurry','~> 1.10.0'
+		s.dependency 'Flurry-iOS-SDK','~> 7.6.4'
 end
