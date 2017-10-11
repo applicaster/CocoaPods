@@ -11,18 +11,18 @@ Pod::Spec.new do |s|
 	s.license = ''
 	s.author = "Applicaster LTD."
 	s.source       = {
-                     "http" => "https://dl.bintray.com/applicaster-ltd/pods/ZappLayoutsComponentsSDK_Framework_1.2.0_.zip"
+                     "http" => "https://dl.bintray.com/applicaster-ltd/pods/ZappLayoutsComponentsSDK_Framework_1.2.0_b42b8b19f1e7f6950010f53a4e0cca34323e035d.zip"
   }
 	s.vendored_frameworks = 'ZappLayoutsComponentsSDK.framework'
 
 	s.requires_arc = true
 	s.xcconfig = { 'ENABLE_BITCODE' => 'NO',
 							   'OTHER_SWIFT_FLAGS[config=Debug]' => '$(inherited) -D DEBUG',
-								 'SWIFT_VERSION' => '3.0'}
+								 'SWIFT_VERSION' => '3.2'}
 
-	s.dependency 'ApplicasterSDK', '~> 4.8.0'
-	s.dependency 'ComponentsSDK', '~> 4.5.0'
-	s.dependency 'ComponentStyles', '~> 4.1.1'
-	s.dependency 'ZappAppConnector', '~> 1.1.0'
+	s.dependency 'ApplicasterSDK', '~> 4.10.0'
+	s.dependency 'ComponentsSDK', '~> 4.8.0'
+	s.dependency 'ComponentsStyles', '~> 4.3.0'
+	s.dependency 'ZappAppConnector', '~> 1.2.0'
 
 end
