@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
 							   'OTHER_SWIFT_FLAGS[config=Debug]' => '$(inherited) -D DEBUG',
 								 'SWIFT_VERSION' => '3.2'}
 
-	s.dependency 'ApplicasterSDK', '~> 4.11.0'
+	s.dependency 'ApplicasterSDK', '~> 4.12.0'
 	s.dependency 'ComponentsSDK', '~> 4.10.0'
 	s.dependency 'ComponentsStyles', '~> 4.4.0'
 	s.dependency 'ZappAppConnector', '~> 1.2.0'
