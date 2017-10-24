@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
 								 'SWIFT_VERSION' => '3.2'
 								 }
 
-	s.dependency "ApplicasterSDK", "= 4.10.0"
+	s.dependency "ApplicasterSDK", "= 4.12.0"
 	s.dependency 'ZappHelpers', '~> 1.2.0'
 
 end
