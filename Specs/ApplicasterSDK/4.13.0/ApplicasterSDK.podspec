@@ -45,7 +45,7 @@ Pod::Spec.new do |s|
 	s.dependency 'FBSDKShareKit', '~> 4.19.0'
 	s.dependency 'FBNotifications', '~> 1.0.1'
 	s.dependency 'SSZipArchive', '~> 1.6.2'
-	s.dependency 'GoogleAds-IMA-iOS-SDK-For-AdMob', '~> 3.3.1'
+	s.dependency 'GoogleAds-IMA-iOS-SDK', '~> 3.4.1'
 	s.dependency 'TwitterKit', '= 3.1.1'
 	s.dependency 'TwitterCore', '= 3.0.1'
 	s.dependency 'Toaster'
