@@ -23,6 +23,6 @@ Pod::Spec.new do |s|
 								 }
 
 	s.dependency "ApplicasterSDK", "= 4.13.0"
-	s.dependency 'ZappHelpers', '~> 1.2.0'
+	s.dependency 'ZappHelpers', '~> 1.3.0'
 
 end
