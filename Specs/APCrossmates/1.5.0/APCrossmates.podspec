@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
 								 'ENABLE_BITCODE' => 'NO'
 								 }
 
-	s.dependency "ApplicasterSDK", "= 4.13.1"
+	s.dependency "ApplicasterSDK", "= 4.13.0"
 	s.dependency 'ZappHelpers', '~> 1.3.0'
 
 end
