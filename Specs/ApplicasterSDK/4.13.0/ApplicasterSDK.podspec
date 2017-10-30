@@ -62,4 +62,5 @@ Pod::Spec.new do |s|
 	s.dependency 'SHMKit_Applicaster', '~> 0.1.3'
 	s.dependency 'MPNotificationView_Applicaster', '~> 1.1.2'
 	s.dependency 'FLAnimatedImage_Applicaster','~> 1.1.0'
+	s.dependency 'GoogleToolboxForMac'
 end
