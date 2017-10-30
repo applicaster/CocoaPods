@@ -58,7 +58,7 @@ Pod::Spec.new do |s|
 	s.dependency 'Freewheel', '~> 5.18.2'
 	s.dependency 'AppoxeeSDK', '~> 4.0.13'
 	s.dependency 'ZappPlugins', '~> 1.13.0'
-	s.dependency 'ZappHelpers', '~> 1.2.0'
+	s.dependency 'ZappHelpers', '~> 1.3.0'
 	s.dependency 'SHMKit_Applicaster', '~> 0.1.3'
 	s.dependency 'MPNotificationView_Applicaster', '~> 1.1.2'
 	s.dependency 'FLAnimatedImage_Applicaster','~> 1.1.0'
