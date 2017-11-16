@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
 	s.name = "ApplicasterSDK"
 
 	# The version is replaced with the tag when running the deploy script
-	s.version = "4.16.2"
+	s.version = "4.17.1"
 
 	s.ios.deployment_target = "9.0"
 	s.summary = "ApplicasterSDK"
@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
 	s.license = ''
 	s.author = "Applicaster LTD."
 	s.source = {
-		"http" => "https://dl.bintray.com/applicaster-ltd/pods/ApplicasterSDK_Framework_4.16.1_669bca49c7438ef2d41cd0c456379657b84de375.zip"
+		"http" => "https://dl.bintray.com/applicaster-ltd/pods/ApplicasterSDK_Framework_4.17.0_52d3062f45987f9600ac7f6da6b9fb59e4e0da05.zip"
 	}
 
 	s.frameworks = 'Foundation', 'EventKit', 'EventKitUI', 'WebKit', 'AdSupport', 'Accounts', 'Social',
