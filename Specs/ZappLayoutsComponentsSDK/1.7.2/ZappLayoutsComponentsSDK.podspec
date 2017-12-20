@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
 
 	s.dependency 'ApplicasterSDK', '~> 4.19.0'
 	s.dependency 'ComponentsSDK', '~> 4.15.0'
-	s.dependency 'ComponentsStyles', '~> 4.3.0'
+	s.dependency 'ComponentsStyles', '~> 4.5.0'
 	s.dependency 'ZappAppConnector', '~> 1.3.0'
 
 end
