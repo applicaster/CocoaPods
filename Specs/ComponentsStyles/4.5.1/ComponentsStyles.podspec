@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
 	s.vendored_frameworks = 'ComponentsStyles.framework'
 
 	s.xcconfig = {'GCC_PREPROCESSOR_DEFINITIONS' => '$(inherited) COMPONENTS_STYLE=1',
-								'OTHER_SWIFT_FLAGS' => '$(inherited) -DCOMPONENTS_STYLE=1',
-								'SWIFT_VERSION' => '4.0'
+			'OTHER_SWIFT_FLAGS' => '$(inherited) -DCOMPONENTS_STYLE=1',
+			'SWIFT_VERSION' => '4.0'
 	}
 end
