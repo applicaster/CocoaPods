@@ -16,6 +16,6 @@ Pod::Spec.new do |s|
                 'SWIFT_VERSION' => '4.0'
               }
   s.public_header_files = 'ZappAppConnector/**/*.h'
-  s.source_files = ['ZappAppConnector/**/*.{h,m}']
+  s.source_files = ['ZappAppConnector/**/*.{h,m,swift}']
 	s.exclude_files = ['ZappAppConnector/**/*Tests.m', 'ZappAppConnector/Info.plist']
 end
