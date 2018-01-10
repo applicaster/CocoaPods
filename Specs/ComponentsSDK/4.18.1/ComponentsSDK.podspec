@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
 
 	s.dependency 'ApplicasterSDK', '~> 4.24.0'
 	s.dependency 'ApplicasterUIKit', '~> 1.6.0'
-	s.dependency 'ZappPlugins', '~> 1.16.0'
+	s.dependency 'ZappPlugins', '~> 1.17.0'
 	s.dependency 'ZappHelpers', '~> 1.4.0'
 	s.dependency 'ZappAppConnector', '~> 1.3.0'
 
