@@ -57,7 +57,7 @@ Pod::Spec.new do |s|
 	s.dependency 'e-planning', '~> 4.2'
 	s.dependency 'Freewheel', '~> 5.18.2'
 	s.dependency 'AppoxeeSDK', '~> 4.0.13'
-	s.dependency 'ZappPlugins', '~> 1.16.0'
+	s.dependency 'ZappPlugins', '~> 1.17.0'
 	s.dependency 'ZappHelpers', '~> 1.4.0'
 	s.dependency 'SHMKit_Applicaster', '~> 0.1.3'
 	s.dependency 'MPNotificationView_Applicaster', '~> 1.1.2'
