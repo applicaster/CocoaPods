@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.homepage     = 'https://github.com/applicaster'
   s.author       = 'Applicaster'
   s.source       = {
-      "http" => "https://dl.bintray.com/applicaster-ltd/pods/APSiren_framework_1.1.4_0d1cf8e68a060b2f801c76dd3c925e0708aa298f"
+      "http" => "https://dl.bintray.com/applicaster-ltd/pods/APSiren_framework_1.1.4_0d1cf8e68a060b2f801c76dd3c925e0708aa298f.zip"
   }
   s.vendored_frameworks = 'APSiren.framework'
 
