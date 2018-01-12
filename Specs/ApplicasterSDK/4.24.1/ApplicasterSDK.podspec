@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
 	s.license = ''
 	s.author = "Applicaster LTD."
 	s.source = {
-		"http" => "https://dl.bintray.com/applicaster-ltd/pods/ApplicasterSDK_Framework_4.24.1_f1735cbc9e6bfc892b992d57617d0413d0a81232.zip"
+		"http" => "https://dl.bintray.com/applicaster-ltd/pods/ApplicasterSDK_Framework_4.24.1_e1d86ff96fe8298a4a61f15b1f40e1208f47300e.zip"
 	}
 
 	s.frameworks = 'Foundation', 'EventKit', 'EventKitUI', 'WebKit', 'AdSupport', 'Accounts', 'Social',
@@ -53,11 +53,11 @@ Pod::Spec.new do |s|
 
 	# Applicater's Private Pod frameworks
 
-	s.dependency 'APSiren', '~> 1.1.2'
+	s.dependency 'APSiren', '~> 1.2.0'
 	s.dependency 'e-planning', '~> 4.2'
 	s.dependency 'Freewheel', '~> 5.18.2'
 	s.dependency 'AppoxeeSDK', '~> 4.0.13'
-	s.dependency 'ZappPlugins', '~> 1.17.0'
+	s.dependency 'ZappPlugins', '~> 1.16.0'
 	s.dependency 'ZappHelpers', '~> 1.4.0'
 	s.dependency 'SHMKit_Applicaster', '~> 0.1.3'
 	s.dependency 'MPNotificationView_Applicaster', '~> 1.1.2'
