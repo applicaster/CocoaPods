@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
 	s.license = ''
 	s.author = "Applicaster LTD."
 	s.source = {
-		"http" => "https://dl.bintray.com/applicaster-ltd/pods/ApplicasterSDK_Framework_4.25.12_7b46b71a1c251104179c9c3f35eb656d3ce6ab78.zip"
+		"http" => "https://dl.bintray.com/applicaster-ltd/pods/ApplicasterSDK_Framework_4.25.13_e9607de79bc79f1d8e2741154d2293671deb4ced.zip"
 	}
 
 	s.frameworks = 'Foundation', 'EventKit', 'EventKitUI', 'WebKit', 'AdSupport', 'Accounts', 'Social',
@@ -62,5 +62,4 @@ Pod::Spec.new do |s|
 	s.dependency 'SHMKit_Applicaster', '~> 0.1.3'
 	s.dependency 'MPNotificationView_Applicaster', '~> 1.1.2'
 	s.dependency 'FLAnimatedImage_Applicaster','~> 1.1.0'
-	s.dependency 'ZappAppConnector'
 end
