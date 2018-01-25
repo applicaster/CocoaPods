@@ -7,7 +7,6 @@ Pod::Spec.new do |s|
 	s.homepage = "https://applicaster.com"
 	s.license = ''
 	s.author = "Applicaster LTD"
-        s.swift_version = "4.0"
 	s.source = {
     	"http" => "https://dl.bintray.com/applicaster-ltd/pods/ApplicasterUIKit_Framework_1.6.3_0386f59ef0a6a45c9490e1f7078cbca8924cabe3.zip"
 	}
