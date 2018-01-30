@@ -21,5 +21,7 @@ Pod::Spec.new do |s|
     basic.dependency 'CocoaLumberjack/Swift', '~> 3.4.0'
   	basic.dependency 'ZappPlugins', '~> 2.0.0'
   	basic.dependency 'ApplicasterSDK', '~> 5.0.0'
+        basic.dependency 'TwitterKit', '= 3.2.1'
+	basic.dependency 'TwitterCore', '= 3.0.2'
   end
 end
