@@ -14,14 +14,12 @@ Pod::Spec.new do |s|
   s.default_subspec = 'Basic'
   s.requires_arc    = true
   s.xcconfig = { 'ENABLE_BITCODE' => 'NO',
-                 'SWIFT_VERSION' => '4.0',
-	  	 'OTHER_LDFLAGS' => '$(inherited) -objc -framework "TwitterKit" -framework "TwitterCore"'}
+                 'SWIFT_VERSION' => '4.0'}
 
   s.subspec 'Basic' do |basic|
     basic.vendored_frameworks = 'NavigationBarPluginBase.framework'
     basic.dependency 'CocoaLumberjack/Swift', '~> 3.4.0'
   	basic.dependency 'ZappPlugins', '~> 2.0.0'
   	basic.dependency 'ApplicasterSDK', '~> 5.0.0'
-
   end
 end
