@@ -14,7 +14,8 @@ Pod::Spec.new do |s|
   s.default_subspec = 'Basic'
   s.requires_arc    = true
   s.xcconfig = { 'ENABLE_BITCODE' => 'NO',
-                 'SWIFT_VERSION' => '4.0'}
+                 'SWIFT_VERSION' => '4.0',
+	  	 'OTHER_LDFLAGS' => '$(inherited) -objc -framework "TwitterKit" -framework "TwitterCore"'}
 
   s.subspec 'Basic' do |basic|
     basic.vendored_frameworks = 'NavigationBarPluginBase.framework'
