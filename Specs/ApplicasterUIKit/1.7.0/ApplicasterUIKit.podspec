@@ -18,5 +18,4 @@ Pod::Spec.new do |s|
 
 	s.frameworks = 'AVFoundation', 'AVKit'
 	s.dependency 'ZappHelpers', '~> 1.4.0'
-	s.swift_version = '4.0'
 end
