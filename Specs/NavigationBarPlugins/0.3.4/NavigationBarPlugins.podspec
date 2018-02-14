@@ -15,6 +15,8 @@ Pod::Spec.new do |s|
   s.requires_arc    = true
   s.xcconfig = {
 	'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES',
+	'OTHER_LDFLAGS' => '$(inherited) -objc -framework "TwitterKit" -framework "TwitterCore"',
+
 	'ENABLE_BITCODE' => 'NO',
 	'FRAMEWORK_SEARCH_PATHS' => '$(inherited) "${PODS_ROOT}"/**',
 	'LIBRARY_SEARCH_PATHS' => '$(inherited) "${PODS_ROOT}"/**',
@@ -26,5 +28,7 @@ Pod::Spec.new do |s|
     basic.dependency 'CocoaLumberjack/Swift', '~> 3.4.0'
   	basic.dependency 'ZappPlugins', '~> 2.0.2'
   	basic.dependency 'ApplicasterSDK', '~> 5.0.3'
+	basic.dependency 'TwitterKit', '= 3.2.1'
+	basic.dependency 'TwitterCore', '= 3.0.2'
   end
 end
