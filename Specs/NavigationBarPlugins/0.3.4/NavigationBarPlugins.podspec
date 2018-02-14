@@ -13,8 +13,13 @@ Pod::Spec.new do |s|
   }
   s.default_subspec = 'Basic'
   s.requires_arc    = true
-  s.xcconfig = { 'ENABLE_BITCODE' => 'NO',
-                 'SWIFT_VERSION' => '4.0'}
+  s.xcconfig = {
+	'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES',
+	'ENABLE_BITCODE' => 'NO',
+	'FRAMEWORK_SEARCH_PATHS' => '$(inherited) "${PODS_ROOT}"/**',
+	'LIBRARY_SEARCH_PATHS' => '$(inherited) "${PODS_ROOT}"/**',
+	'SWIFT_VERSION' => '4.0'
+  }
 
   s.subspec 'Basic' do |basic|
     basic.vendored_frameworks = 'NavigationBarPluginBase.framework'
