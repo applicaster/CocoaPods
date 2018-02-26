@@ -23,7 +23,6 @@ Pod::Spec.new do |s|
 		s.vendored_frameworks = 'ApplicasterSDK.framework'
 
 		s.xcconfig = { 'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES',
-			'FRAMEWORK_SEARCH_PATHS' => '$(inherited) "${PODS_ROOT}"/**',
 									'OTHER_LDFLAGS' => '$(inherited) -objc -l"AdManager" -framework "AppoxeeSDK" -framework "FirebaseRemoteConfig" -framework "GoogleMobileAds" -framework "HockeySDK" -framework "GoogleInteractiveMediaAds"',
 									'ENABLE_BITCODE' => 'NO',
 									'GCC_WARN_UNDECLARED_SELECTOR' => "NO",
