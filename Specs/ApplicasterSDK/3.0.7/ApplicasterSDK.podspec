@@ -1,7 +1,6 @@
 Pod::Spec.new do |s|
 	s.name = "ApplicasterSDK"
 	s.version = "3.0.7"
-	s.ios.platform = :ios
 	s.ios.deployment_target = "8.0"
 	s.summary = "ApplicasterSDK"
 	s.description = "ApplicasterSDK"
