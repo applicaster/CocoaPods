@@ -199,7 +199,7 @@ Pod::Spec.new do |s|
    s.subspec 'Talamoos' do |talamoos|
      talamoos.vendored_frameworks = 'ZappAnalyticsPluginTalamoos.framework'
 
-     talamoos.dependency 'ZappAnalyticsPluginBase'
+     talamoos.dependency 'ZappAnalyticsPlugins/Basic'
      talamoos.dependency 'ApplicasterSDK'
    end
 end
