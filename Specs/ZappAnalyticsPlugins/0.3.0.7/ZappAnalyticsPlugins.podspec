@@ -161,7 +161,7 @@ Pod::Spec.new do |s|
 
     owa.xcconfig =  { 'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES',
                      'FRAMEWORK_SEARCH_PATHS' => '$(inherited) "${PODS_ROOT}"/**',
-                     'OTHER_LDFLAGS' => '$(inherited) -framework "OWASpringAppsensor" -framework "ZappAnalyticsPluginCoolaData"',
+                     'OTHER_LDFLAGS' => '$(inherited) -framework "OWASpringAppsensor" -framework "ZappAnalyticsPluginOwa"',
                      'ENABLE_BITCODE' => 'NO'
                }
     owa.dependency 'ZappAnalyticsPlugins/Basic'
