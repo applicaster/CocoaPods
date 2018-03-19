@@ -101,7 +101,7 @@ Pod::Spec.new do |s|
                 }
 
     fb.dependency 'ZappAnalyticsPlugins/Basic'
-    fb.dependency 'FBSDKCoreKit', '~> 4.19.0'
+    fb.dependency 'FBSDKCoreKit', '~> 4.31.0'
   end
 
   s.subspec 'Agof' do |agof|
