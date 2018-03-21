@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
 
 	s.requires_arc = true
 	s.xcconfig = { 'ENABLE_BITCODE' => 'NO',
-								 'SWIFT_VERSION' => '4.0'
+								 'SWIFT_VERSION' => '4.0',
 							 	 'ENABLE_TESTABILITY' => 'YES'}
 
 end
