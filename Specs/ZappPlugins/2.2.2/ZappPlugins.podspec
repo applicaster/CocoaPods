@@ -12,9 +12,10 @@ Pod::Spec.new do |s|
   }
 
 	s.vendored_frameworks = 'ZappPlugins.framework'
-	
+
 	s.requires_arc = true
 	s.xcconfig = { 'ENABLE_BITCODE' => 'NO',
-								 'SWIFT_VERSION' => '4.0'}
+								 'SWIFT_VERSION' => '4.0'
+							 	 'ENABLE_TESTABILITY' => 'YES'}
 
 end
