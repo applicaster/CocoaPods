@@ -104,11 +104,6 @@ Pod::Spec.new do |s|
     packetZoom.dependency 'ZappGeneralPlugins/Basic'
     packetZoom.dependency 'PZSpeed'
 
-    packetZoom.xcconfig =  { 'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES',
-      'OTHER_LDFLAGS' => '$(inherited) -ObjC -framework "PZSpeed"',
-      'FRAMEWORK_SEARCH_PATHS' => '$(inherited) "${PODS_ROOT}"/**',
-      'LIBRARY_SEARCH_PATHS' => '$(inherited) "${PODS_ROOT}"/**'
-    }
     packetZoom.frameworks = 'UIKit', 'CFNetwork', 'CoreLocation', 'SystemConfiguration', 'Security', 'Foundation', 'CoreTelephony'
     packetZoom.libraries = 'c++', 'z'
 
