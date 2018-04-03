@@ -99,7 +99,7 @@ Pod::Spec.new do |s|
     datasourceExtensionsReshet.dependency 'DateToolsSwift'
   end
 
-  s.subspec 'PacketZoom' do |packetZoom|
+  s.subspec 'Packetzoom' do |packetZoom|
     packetZoom.vendored_frameworks = 'ZappGeneralPluginPacketZoom.framework'
     packetZoom.dependency 'ZappGeneralPlugins/Basic'
     packetZoom.dependency 'PZSpeed'
