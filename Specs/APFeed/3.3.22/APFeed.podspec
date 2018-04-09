@@ -7,7 +7,6 @@ Pod::Spec.new do |s|
 	s.version = "3.3.22"
 
 	# The minimum deployment targets of the supported platforms
-	s.ios.platform = :ios
 	s.ios.deployment_target = "7.0"
 
 	# A short (maximum 140 characters) description of the Pod
@@ -29,9 +28,9 @@ Pod::Spec.new do |s|
 
 	s.author = { "Miri Vecselboim" => "m.vecselboim@applicaster.com",
 				 "Simon Borkin" => "s.borkin@applicaster.com" }
-				 
+
 	# The location from where the library should be retrieved
-	s.source = { 
+	s.source = {
     	"http" => "https://dl.bintray.com/applicaster-ltd/Stars-Team-iOS/APFeedFramework_3.3.22_Release.zip"
 	}
 
@@ -43,12 +42,12 @@ Pod::Spec.new do |s|
 
 	# A list of system libraries that the user’s target needs to link against
 	s.ios.libraries = 'iconv' , 'resolv' , 'xml2' , 'sqlite3.0' , 'z'
-	
+
 	# Will add the framework to the project once the installation completes
 	s.preserve_paths = 'APFeed.framework'
 	s.vendored_frameworks = 'APFeed.framework'
  	s.resources = ["APFeed.framework/Resources/*"]
 
 	s.dependency 'Applicaster', '= 2.18.180'
-	
+
 end
