@@ -51,6 +51,7 @@ Pod::Spec.new do |s|
 
     ga.dependency 'ZappAnalyticsPlugins/Basic'
     ga.dependency 'GoogleAnalytics', '~> 3.17.0'
+    ga.dependency 'GoogleAds-IMA-iOS-SDK', '3.7.0.1'
   end
 
   s.subspec 'Flurry' do |flurry|
