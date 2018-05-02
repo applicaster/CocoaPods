@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
 	s.license      = ''
 	s.author       = "Applicaster LTD."
 	s.source = {
-    "http" => "https://dl.bintray.com/applicaster-ltd/pods/NavigationBarPlugins_Framework_0.7.1_4376636a65d5215682d2cc2e78502afad99d4733.zip"
+    "http" => "https://dl.bintray.com/applicaster-ltd/pods/NavigationBarPlugins_Framework_0.7.1_096e6a993eb63b4b7291da6e93c9785bb66e5918.zip"
   }
   s.default_subspec = 'Basic'
   s.requires_arc    = true
