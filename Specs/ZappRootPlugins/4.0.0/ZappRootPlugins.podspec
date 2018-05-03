@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
 	s.default_subspec = 'Basic'
 	s.xcconfig = { 'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES',
 								 'ENABLE_BITCODE' => 'NO',
-								 'SWIFT_VERSION' => '4.0'
+								 'SWIFT_VERSION' => '4.1'
 						 }
 
 	s.subspec 'Basic' do |basic|
