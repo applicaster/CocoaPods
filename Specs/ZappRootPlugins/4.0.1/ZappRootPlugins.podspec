@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 	s.name = "ZappRootPlugins"
-	s.version = "4.0.0"
+	s.version = "4.0.1"
 	s.ios.deployment_target = "9.0"
 	s.summary = "ZappRoot"
 	s.description = "ZappRoot"
@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
 	s.license = ''
 	s.author = "Applicaster LTD."
 	s.source       = {
-		"http" => "https://dl.bintray.com/applicaster-ltd/pods/ZappRootPlugins_Framework_4.0.0_2cacd8496baca8e95c9a323e24c27dceebf2706c.zip"
+		"http" => "https://dl.bintray.com/applicaster-ltd/pods/ZappRootPlugins_Framework_4.0.1_0d46ce419884a7d75cfdbfc29f59dbaac4aad4af.zip"
   }
 
 	s.requires_arc = true
@@ -26,9 +26,11 @@ Pod::Spec.new do |s|
 
  	s.subspec 'NativeTabBar' do |nativeTabBar|
 		nativeTabBar.vendored_frameworks = 'ZappRootPluginNativeTabBar.framework'
+
 		nativeTabBar.dependency 'ComponentsSDK'
 		nativeTabBar.dependency 'UIViewAppearanceSwift'
 		nativeTabBar.dependency 'ZappLayoutsComponentsSDK'
+	 	nativeTabBar.dependency 'ZappAppConnector'
 		nativeTabBar.dependency 'ZappRootPlugins/Basic'
  	end
 
