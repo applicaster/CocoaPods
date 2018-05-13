@@ -11,12 +11,11 @@ Pod::Spec.new do |s|
     	"http" => "https://dl.bintray.com/applicaster-ltd/pods/ApplicasterUIKit_Framework_2.0.0_4043d89b556b4af01e489bf0a58fc77679bf9990.zip"
 	}
 	s.xcconfig =  {
-                'SWIFT_VERSION' => '4.0'
+                'SWIFT_VERSION' => '4.1'
               }
 	s.requires_arc = true
 	s.vendored_frameworks = 'ApplicasterUIKit.framework'
 
 	s.frameworks = 'AVFoundation', 'AVKit'
 	s.dependency 'ZappHelpers', '~> 2.0.0'
-	s.swift_version = '4.1'
 end
