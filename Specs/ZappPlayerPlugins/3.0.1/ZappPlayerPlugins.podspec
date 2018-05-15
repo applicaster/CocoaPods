@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
       "http" => "https://dl.bintray.com/applicaster-ltd/pods/ZappPlayerPlugins_Framework_3.0.1_6aa1280741f14fa3522c14b0c0205740306bf77c.zip"
   }
 
-  s.platform     = :ios, '9.1'
+  s.platform     = :ios, '9.0'
   s.requires_arc = true
   s.default_subspec = 'Basic'
 
