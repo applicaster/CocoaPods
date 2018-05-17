@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
 	s.license = ''
 	s.author = "Applicaster LTD."
 	s.source = {
-			"http" => "https://dl.bintray.com/applicaster-ltd/pods/ComponentsSDK_Framework_6.0.2_72e42db5f30444e1f1100af9484f857b5685790a.zip"
+			"http" => "https://dl.bintray.com/applicaster-ltd/pods/ComponentsSDK_Framework_6.0.2_8fd2af50a5a39fd5b6cbe540fac2c87c78580f59.zip"
 	}
 
 	s.vendored_frameworks = 'ComponentsSDK.framework'
