@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
 	s.license = ''
 	s.author = "Applicaster LTD."
 	s.source       = {
-                     "http" => "https://dl.bintray.com/applicaster-ltd/pods/ZappLayoutsComponentsSDK_Framework_3.0.3_ef9393fdb0f34978d7296749b4487d75d2aa4c9a.zip"
+                     "http" => "https://dl.bintray.com/applicaster-ltd/pods/ZappLayoutsComponentsSDK_Framework_3.0.4_467cb3c7d4174e03eee125cd949643e8d9f84dde.zip"
   }
 	s.vendored_frameworks = 'ZappLayoutsComponentsSDK.framework'
 
