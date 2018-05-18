@@ -20,5 +20,5 @@ Pod::Spec.new do |s|
     'SWIFT_VERSION' => '4.0'
   }
 
-  s.dependency 'ZappPlugins', '~> 2.3.0'
+  s.dependency 'ZappPlugins', '~> 2.5.0'
 end
