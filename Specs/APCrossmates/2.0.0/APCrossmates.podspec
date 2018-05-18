@@ -15,6 +15,8 @@ Pod::Spec.new do |s|
 	s.vendored_frameworks = "APCrossmates.framework"
 
 	s.xcconfig = { 'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES',
+							         'GCC_PREPROCESSOR_DEFINITIONS' => '$(inherited) CROSSMATES_ENABLED=1',
+								 'OTHER_SWIFT_FLAGS' => '$(inherited) -DCROSSMATES_ENABLED=1',
 								 'ENABLE_BITCODE' => 'NO',
 								 'SWIFT_VERSION' => '4.1'
 								 }
