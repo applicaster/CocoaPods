@@ -29,14 +29,12 @@ Pod::Spec.new do |s|
 
 		nativeTabBar.dependency 'ComponentsSDK'
 		nativeTabBar.dependency 'UIViewAppearanceSwift'
-		nativeTabBar.dependency 'ZappLayoutsComponentsSDK'
 	 	nativeTabBar.dependency 'ZappAppConnector'
 		nativeTabBar.dependency 'ZappRootPlugins/Basic'
  	end
 
 	s.subspec 'TwoLevelRNMenu' do |twoLevelRNMenu|
 	 twoLevelRNMenu.vendored_frameworks = 'ZappRootPlugin2LevelRNMenu.framework'
-	 twoLevelRNMenu.dependency 'ZappLayoutsComponentsSDK'
 	 twoLevelRNMenu.dependency 'ComponentsSDK'
 	 twoLevelRNMenu.dependency 'ZappReactNativeAdapter/Default'
 	 twoLevelRNMenu.dependency 'yoga'
