@@ -53,7 +53,7 @@ Pod::Spec.new do |s|
 
 	# Applicater's Private Pod frameworks
 
-	s.dependency 'APSiren', '~> 1.2.0'
+	s.dependency 'APSiren', '~> 1.3.0'
 	s.dependency 'e-planning', '~> 4.2'
 	s.dependency 'Freewheel', '~> 5.18.2'
 	s.dependency 'AppoxeeSDK', '~> 4.0.13'
