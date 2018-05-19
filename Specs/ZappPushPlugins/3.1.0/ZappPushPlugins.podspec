@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
 
   s.subspec 'Basic' do |basic|
     basic.xcconfig =  { 'SWIFT_VERSION' => '4.1' }
-    basic.dependency 'ZappPlugins', '~> 4.1.0'
+    basic.dependency 'ZappPlugins'
   end
 
   #--------------SUBSPECS--------------
