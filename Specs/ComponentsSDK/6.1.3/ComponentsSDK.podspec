@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
 	s.requires_arc = true
 	s.xcconfig = { 'ENABLE_BITCODE' => 'NO',
 							   'OTHER_SWIFT_FLAGS[config=Debug]' => '$(inherited) -D DEBUG',
-								 'SWIFT_VERSION' => '4.0'}
+								 'SWIFT_VERSION' => '4.1'}
 
 	s.dependency 'ApplicasterSDK', '~> 6.1.2'
 	s.dependency 'ApplicasterUIKit', '~> 2.1.0'
