@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
 	s.license = ''
 	s.author = "Applicaster LTD."
 	s.source       = {
-		"http" => "https://dl.bintray.com/applicaster-ltd/pods/ZappRootPlugins_Framework_4.0.4_94d201d0138c4fed4fe42cdef71990546f0975d7.zip"
+		"http" => "https://dl.bintray.com/applicaster-ltd/pods/ZappRootPlugins_Framework_4.0.4_775b2f61f5158aa62882b42291d6f036a95aac6c.zip"
   }
 
 	s.requires_arc = true
