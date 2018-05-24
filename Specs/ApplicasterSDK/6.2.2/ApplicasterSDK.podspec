@@ -13,38 +13,30 @@ Pod::Spec.new do |s|
 	s.source = {
 		"http" => "https://dl.bintray.com/applicaster-ltd/pods/ApplicasterSDK_Framework_6.2.2_b0e75e4631a840e599e6c9cb340923ef87b8fa89.zip"
 	}
-
-	s.frameworks = 'Foundation', 'EventKit', 'EventKitUI', 'WebKit', 'AdSupport', 'Accounts', 'Social',
-	'AudioToolbox', 'AVFoundation', 'CoreTelephony', 'CoreMotion', 'CoreMedia', 'CoreLocation', 'iAd',
-	'CoreData', 'CoreText', 'CFNetwork', 'QuartzCore', 'MobileCoreServices', 'QuickLook', 'AssetsLibrary',
-	'MessageUI', 'StoreKit', 'SystemConfiguration', 'Accelerate', 'MediaPlayer', 'AddressBook', 'CoreGraphics', 'SafariServices'
-	s.libraries = 'iconv', 'resolv', 'xml2', 'sqlite3.0', 'c++', 'z'
+	s.static_framework = true
 
 	s.vendored_frameworks = 'ApplicasterSDK.framework'
 
 	s.xcconfig = {
-		'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES',
-		'OTHER_LDFLAGS' => '$(inherited) -objc -framework "GoogleMobileAds" -framework "HockeySDK" -framework "GoogleInteractiveMediaAds"',
 		'ENABLE_BITCODE' => 'NO',
 		'GCC_WARN_UNDECLARED_SELECTOR' => "NO",
-		'FRAMEWORK_SEARCH_PATHS' => '$(inherited) "${PODS_ROOT}"/**',
-		'LIBRARY_SEARCH_PATHS' => '$(inherited) "${PODS_ROOT}"/**',
+		'OTHER_SWIFT_FLAGS[config=Debug]' => '$(inherited) -D DEBUG',
 		'SWIFT_VERSION' => '4.1'
 	}
 
 	# Public frameworks
 
-	s.dependency 'AFNetworking', '~> 3.1.0'
-	s.dependency 'CocoaLumberjack/Swift', '~> 3.4.0'
-	s.dependency 'TTTAttributedLabel', '~> 2.1.0'
-	s.dependency 'HockeySDK', '~> 4.1.3'
-	s.dependency 'FBSDKCoreKit', '~> 4.31.1'
-	s.dependency 'FBSDKLoginKit', '~> 4.31.1'
-	s.dependency 'FBSDKShareKit', '~> 4.31.1'
-	s.dependency 'FBNotifications', '~> 1.0.1'
-	s.dependency 'SSZipArchive', '~> 2.1.0'
-	s.dependency 'GoogleAds-IMA-iOS-SDK', '= 3.7.0.1'
-	s.dependency 'Google-Mobile-Ads-SDK', '~> 7.30.0'
+	s.dependency 'AFNetworking', '= 3.2.1'
+	s.dependency 'CocoaLumberjack/Swift', '= 3.4.2'
+	s.dependency 'TTTAttributedLabel', '= 2.1.0'
+	s.dependency 'HockeySDK', '= 4.1.3'
+	s.dependency 'FBSDKCoreKit', '= 4.33.0'
+	s.dependency 'FBSDKLoginKit', '= 4.33.0'
+	s.dependency 'FBSDKShareKit', '= 4.33.0'
+	s.dependency 'FBNotifications', '= 1.0.1'
+	s.dependency 'SSZipArchive', '= 2.1.0'
+	s.dependency 'GoogleAds-IMA-iOS-SDK', '= 3.7.2'
+	s.dependency 'Google-Mobile-Ads-SDK', '= 7.31.0'
 	s.dependency 'TwitterKit', '= 3.3.0'
 	s.dependency 'TwitterCore', '= 3.1.0'
 
