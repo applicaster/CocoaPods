@@ -37,8 +37,6 @@ Pod::Spec.new do |s|
 	s.dependency 'AFNetworking', '~> 3.1.0'
 	s.dependency 'CocoaLumberjack/Swift', '~> 3.4.0'
 	s.dependency 'TTTAttributedLabel', '~> 2.1.0'
-	s.dependency 'NKJWT', '~> 0.1.0'
-	s.dependency 'FormatterKit', '~> 1.8.1'
 	s.dependency 'HockeySDK', '~> 4.1.3'
 	s.dependency 'FBSDKCoreKit', '~> 4.31.1'
 	s.dependency 'FBSDKLoginKit', '~> 4.31.1'
@@ -46,18 +44,14 @@ Pod::Spec.new do |s|
 	s.dependency 'FBNotifications', '~> 1.0.1'
 	s.dependency 'SSZipArchive', '~> 2.1.0'
 	s.dependency 'GoogleAds-IMA-iOS-SDK', '= 3.7.0.1'
-	s.dependency 'GoogleMobileAds'
+	s.dependency 'Google-Mobile-Ads-SDK', '~> 7.30.0'
 	s.dependency 'TwitterKit', '= 3.3.0'
 	s.dependency 'TwitterCore', '= 3.1.0'
-	s.dependency 'Toaster'
 
 	# Applicater's Private Pod frameworks
 
-	s.dependency 'APSiren', '~> 1.3.0'
-	s.dependency 'ZappPlugins', '~> 4.1.0'
+	s.dependency 'ZappPlugins', '~> 4.2.0'
 	s.dependency 'SHMKit_Applicaster', '~> 0.1.3'
-	s.dependency 'MPNotificationView_Applicaster', '~> 1.1.2'
-	s.dependency 'FLAnimatedImage_Applicaster','~> 1.1.0'
-	s.dependency 'ZappAppConnector', '~> 3.1.0'
+	s.dependency 'ZappAppConnector', '~> 3.2.0'
 
 end
