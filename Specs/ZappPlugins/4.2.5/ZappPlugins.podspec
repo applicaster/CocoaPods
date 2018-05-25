@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   }
 
 	s.vendored_frameworks = 'ZappPlugins.framework'
-	s.static_framework = true
+	# s.static_framework = true
 
 	s.requires_arc = true
 	s.xcconfig = { 'SWIFT_VERSION' => '4.1',
