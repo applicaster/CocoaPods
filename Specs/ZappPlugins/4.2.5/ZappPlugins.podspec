@@ -11,6 +11,13 @@ Pod::Spec.new do |s|
 			"http" => "https://dl.bintray.com/applicaster-ltd/pods/ZappPlugins_Framework_4.2.5_09035d3badb8dfeb600be57c8d028b61f23a0a92.zip"
   }
 
+	s.xcconfig = {
+			'OTHER_LDFLAGS' => '$(inherited)',
+			'FRAMEWORK_SEARCH_PATHS' => '$(inherited)',
+			'LIBRARY_SEARCH_PATHS' => '$(inherited)',
+			'OTHER_SWIFT_FLAGS[config=Debug]' => '$(inherited) -D DEBUG',
+			'SWIFT_VERSION' => '4.1'
+		}
 	s.vendored_frameworks = 'ZappPlugins.framework'
 	s.static_framework = true
 
