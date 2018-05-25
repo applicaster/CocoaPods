@@ -12,11 +12,11 @@ Pod::Spec.new do |s|
   }
 
 	s.frameworks = 'Foundation', 'UIKit', 'AVFoundation', 'QuartzCore', 'CoreText', 'StoreKit'
-	s.static_framework = true
+	# s.static_framework = true
 	s.vendored_frameworks = 'ZappPlugins.framework'
 	s.requires_arc = true
 	s.xcconfig = { 'SWIFT_VERSION' => '4.1',
-							 	 'ENABLE_TESTABILITY' => 'YES',
+							 	 # 'ENABLE_TESTABILITY' => 'YES',
 								 'ENABLE_BITCODE' => 'NO',
 							 }
 
