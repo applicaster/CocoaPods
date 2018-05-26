@@ -29,8 +29,7 @@ Pod::Spec.new do |s|
 		'ApplicasterSDK.framework/*.aiff',
 		'ApplicasterSDK.framework/*.png',
 		'ApplicasterSDK.framework/*.jpg',
-		'ApplicasterSDK.framework/*.jpeg',
-		'ApplicasterSDK.framework/APFeedSettings.plist'
+		'ApplicasterSDK.framework/*.jpeg'
 	]
 
 	s.xcconfig = {
