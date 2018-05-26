@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 	s.name = "ZappRootPlugins"
-	s.version = "4.0.4"
+	s.version = "4.1.1"
 	s.ios.deployment_target = "9.0"
 	s.summary = "ZappRoot"
 	s.description = "ZappRoot"
@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
 	s.license = ''
 	s.author = "Applicaster LTD."
 	s.source       = {
-		"http" => "https://dl.bintray.com/applicaster-ltd/pods/ZappRootPlugins_Framework_4.0.4_1d375b453f9e87cbe486573fc2c823760d3e1ee0.zip"
+		"http" => "https://dl.bintray.com/applicaster-ltd/pods/ZappRootPlugins_Framework_4.1.1_3a1090bc1819319bb0dceac28b1f780b22439f5d.zip"
   }
 
 	s.requires_arc = true
@@ -29,14 +29,12 @@ Pod::Spec.new do |s|
 
 		nativeTabBar.dependency 'ComponentsSDK'
 		nativeTabBar.dependency 'UIViewAppearanceSwift'
-		nativeTabBar.dependency 'ZappLayoutsComponentsSDK'
 	 	nativeTabBar.dependency 'ZappAppConnector'
 		nativeTabBar.dependency 'ZappRootPlugins/Basic'
  	end
 
 	s.subspec 'TwoLevelRNMenu' do |twoLevelRNMenu|
 	 twoLevelRNMenu.vendored_frameworks = 'ZappRootPlugin2LevelRNMenu.framework'
-	 twoLevelRNMenu.dependency 'ZappLayoutsComponentsSDK'
 	 twoLevelRNMenu.dependency 'ComponentsSDK'
 	 twoLevelRNMenu.dependency 'ZappReactNativeAdapter/Default'
 	 twoLevelRNMenu.dependency 'yoga'
