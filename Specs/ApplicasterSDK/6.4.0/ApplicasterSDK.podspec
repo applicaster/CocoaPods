@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
 	s.preserve_paths = 'ApplicasterSDK.framework/*'
 
 	s.resources = [
-		'ApplicasterSDK.framework/*.xib',
+		'ApplicasterSDK.framework/*.nib',
 		'ApplicasterSDK.framework/*.bundle',
 		'ApplicasterSDK.framework/*.caf',
 		'ApplicasterSDK.framework/*.aiff',
