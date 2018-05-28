@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 	s.name = "ZappRootPlugins"
-	s.version = "4.3.0"
+	s.version = "4.3.3"
 	s.ios.deployment_target = "9.0"
 	s.summary = "ZappRoot"
 	s.description = "ZappRoot"
@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
 	s.license = ''
 	s.author = "Applicaster LTD."
 	s.source       = {
-		"http" => "https://dl.bintray.com/applicaster-ltd/pods/ZappRootPlugins_Framework_4.3.0_2c38203f343be2da0a196d91f161b8d9b011a71f.zip"
+		"http" => "https://dl.bintray.com/applicaster-ltd/pods/ZappRootPlugins_Framework_4.3.3_019c2d63a685ac0c36b7e7cba0243c4dee291923.zip"
   }
 
   	s.static_framework = true
