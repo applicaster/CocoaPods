@@ -34,8 +34,6 @@ Pod::Spec.new do |s|
 
 		nativeTabBar.dependency 'ComponentsSDK'
 		nativeTabBar.dependency 'UIViewAppearanceSwift'
-		nativeTabBar.dependency 'ZappLayoutsComponentsSDK'
-	 	nativeTabBar.dependency 'ZappAppConnector'
 		nativeTabBar.dependency 'ZappRootPlugins/Basic'
  	end
 
