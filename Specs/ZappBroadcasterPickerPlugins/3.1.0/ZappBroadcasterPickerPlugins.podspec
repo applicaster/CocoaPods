@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
 
   s.subspec 'Basic' do |basic|
     basic.dependency 'ZappPlugins'
-    basic.dependency 'AFNetworking', '~> 3.1.0'
+    basic.dependency 'AFNetworking', '~> 3.2.0'
     basic.dependency 'ApplicasterSDK'
     basic.vendored_frameworks = 'ZappBroadcasterPickerPluginBase.framework'
   end
