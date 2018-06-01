@@ -189,7 +189,7 @@ Pod::Spec.new do |s|
                  }
 
      firebase.dependency 'ZappAnalyticsPlugins/Basic'
-     firebase.dependency 'Firebase', '~> 4.5.0'
+     firebase.dependency 'Firebase', '~> 4.12.0'
      firebase.dependency 'Firebase/Analytics'
    end
 
