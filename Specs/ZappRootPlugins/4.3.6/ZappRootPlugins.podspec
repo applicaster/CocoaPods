@@ -39,7 +39,6 @@ Pod::Spec.new do |s|
 
 	s.subspec 'TwoLevelRNMenu' do |twoLevelRNMenu|
 	 twoLevelRNMenu.vendored_frameworks = 'ZappRootPlugin2LevelRNMenu.framework'
-	 twoLevelRNMenu.dependency 'ZappLayoutsComponentsSDK'
 	 twoLevelRNMenu.dependency 'ComponentsSDK'
 	 twoLevelRNMenu.dependency 'ZappReactNativeAdapter/Default'
 	 twoLevelRNMenu.dependency 'yoga'
