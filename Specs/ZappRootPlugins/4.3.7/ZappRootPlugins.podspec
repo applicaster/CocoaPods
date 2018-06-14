@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
 		basic.dependency 'ApplicasterSDK'
 		basic.dependency 'ZappPlugins'
 		basic.resources = [
-			'ZappRootPluginBase.framework/*.nib'
+			'ZappRootPluginBase.framework/ZP*.nib'
 		]
   end
 
