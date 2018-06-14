@@ -28,6 +28,6 @@ Pod::Spec.new do |s|
   	basic.dependency 'ZappPlugins'
   	basic.dependency 'ApplicasterSDK'
     basic.dependency 'ComponentsSDK'
-    basic.resources = ['NavigationBarPluginBase.framework/*.nib']
+    basic.resources = ['NavigationBarPluginBase.framework/DefaultNavigationBar*.nib']
   end
 end
