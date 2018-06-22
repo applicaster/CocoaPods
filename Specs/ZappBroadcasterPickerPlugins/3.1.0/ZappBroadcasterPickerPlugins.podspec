@@ -67,6 +67,9 @@ Pod::Spec.new do |s|
     librarySelector.xcconfig =  { 'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES',
                   'ENABLE_BITCODE' => 'YES'
                 }
+    librarySelector.resources = [
+		'ZappBroadcasterPickerPluginLibrarySelector.framework/*.nib'
+	]
     librarySelector.dependency 'ZappBroadcasterPickerPlugins/Basic'
   end
 end
