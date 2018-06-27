@@ -35,6 +35,9 @@ Pod::Spec.new do |s|
 		nativeTabBar.dependency 'ComponentsSDK'
 		nativeTabBar.dependency 'UIViewAppearanceSwift'
 		nativeTabBar.dependency 'ZappRootPlugins/Basic'
+		nativeTabBar.resources = [
+			'ZappRootPluginNativeTabBar.framework/ZP*.nib'
+		]
  	end
 
 	s.subspec 'TwoLevelRNMenu' do |twoLevelRNMenu|
