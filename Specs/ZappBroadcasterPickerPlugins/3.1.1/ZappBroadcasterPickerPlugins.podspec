@@ -68,5 +68,6 @@ Pod::Spec.new do |s|
                   'ENABLE_BITCODE' => 'YES'
                 }
     librarySelector.dependency 'ZappBroadcasterPickerPlugins/Basic'
+    librarySelector.resources = ['ZappBroadcasterPickerPluginLibrarySelector.framework/BroadcasterListView*.nib']
   end
 end
