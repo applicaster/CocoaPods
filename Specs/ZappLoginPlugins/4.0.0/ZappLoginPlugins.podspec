@@ -78,7 +78,7 @@ Pod::Spec.new do |s|
     facebookLogin.dependency 'ZappLoginPlugins/Base'
     facebookLogin.dependency 'ApplicasterUIKit'
     facebookLogin.dependency 'FBSDKCoreKit', '~> 4.33.0'
-    facebookLogin.dependency 'ApplicasterSDK', '~> 6.4.0'
+    facebookLogin.dependency 'ApplicasterSDK', '~> 7.0.0'
 
   end
 
@@ -97,7 +97,7 @@ Pod::Spec.new do |s|
       'ZappLoginPluginMedcomGo.framework/*.jpeg'
     ]
     medcomGo.dependency 'ZappLoginPlugins/Base'
-    medcomGo.dependency 'ApplicasterSDK', '~> 6.4.0'
+    medcomGo.dependency 'ApplicasterSDK', '~> 7.0.0'
   end
 
   s.subspec 'Jpost' do |jpost|
@@ -116,7 +116,7 @@ Pod::Spec.new do |s|
     ]
     jpost.dependency 'ZappLoginPlugins/Base'
     jpost.dependency 'ApplicasterUIKit'
-    jpost.dependency 'ApplicasterSDK', '~> 6.4.0'
+    jpost.dependency 'ApplicasterSDK', '~> 7.0.0'
   end
 
   s.subspec 'CloudPass' do |cloudPass|
@@ -134,7 +134,7 @@ Pod::Spec.new do |s|
       'ZappLoginPluginCloudPass.framework/*.jpeg'
     ]
     cloudPass.dependency 'ZappLoginPlugins/Base'
-    cloudPass.dependency 'ApplicasterSDK', '~> 6.4.0'
+    cloudPass.dependency 'ApplicasterSDK', '~> 7.0.0'
   end
 
   s.subspec 'AdobeAccessEnabler' do |adobeAccessEnabler|
