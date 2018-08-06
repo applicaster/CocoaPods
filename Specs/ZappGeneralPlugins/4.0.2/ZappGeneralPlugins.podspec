@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.license          = 'CMPS'
   s.author           = { "cmps" => "a.zchut@applicaster.com" }
   s.source = {
-      "http" => "https://dl.bintray.com/applicaster-ltd/pods/ZappGeneralPlugins_Framework_4.0.1_e1ba57be61443a005a1b0affcedce8f49f23cf1e.zip"
+      "http" => "https://dl.bintray.com/applicaster-ltd/pods/ZappGeneralPlugins_Framework_4.0.2_6cface5b3216646f739e713b23997ed65d6bbcdd.zip"
   }
 
   s.platform     = :ios, '9.0'
