@@ -19,5 +19,5 @@ Pod::Spec.new do |s|
 	s.vendored_frameworks = 'ApplicasterUIKit.framework'
 	s.static_framework = true
 	s.frameworks = 'AVFoundation', 'AVKit'
-	s.dependency 'ZappPlugins', '~> 5.0.0'
+	s.dependency 'ZappPlugins'
 end
