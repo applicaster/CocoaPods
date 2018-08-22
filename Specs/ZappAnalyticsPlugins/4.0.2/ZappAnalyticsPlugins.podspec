@@ -33,7 +33,7 @@ Pod::Spec.new do |s|
                 }
 
     mixpanel.dependency 'ZappAnalyticsPlugins/Basic'
-    mixpanel.dependency 'Mixpanel-swift', '= 2.4.1'
+    mixpanel.dependency 'Mixpanel-swift', '~> 2.4.2'
   end
 
   s.subspec 'GoogleAnalytics' do |ga|
