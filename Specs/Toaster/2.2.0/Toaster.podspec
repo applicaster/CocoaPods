@@ -11,4 +11,9 @@ Pod::Spec.new do |s|
   s.source_files = 'Sources/*.{swift,h}'
   s.frameworks   = 'UIKit', 'Foundation', 'QuartzCore'
   s.requires_arc = true
+
+  s.xcconfig = { 'ENABLE_BITCODE' => 'YES',
+                 'SWIFT_VERSION' => '4.1',
+                 'OTHER_CFLAGS'  => '-fembed-bitcode'
+               }
 end
