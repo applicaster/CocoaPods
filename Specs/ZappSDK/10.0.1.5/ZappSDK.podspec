@@ -44,7 +44,7 @@ Pod::Spec.new do |s|
 	]
 
   s.dependency 'MBProgressHUD', '= 1.1.0'
-  s.dependency 'google-cast-sdk', '= 4.1.0'
+  s.dependency 'google-cast-sdk', '= 4.3.3'
   s.dependency 'CWStatusBarNotification', '= 2.3.5'
   s.dependency 'Firebase'
   s.dependency 'Firebase/Core'
