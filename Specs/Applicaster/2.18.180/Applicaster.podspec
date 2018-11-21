@@ -7,8 +7,7 @@ Pod::Spec.new do |s|
 	s.version = "2.18.180"
 
 	# The minimum deployment targets of the supported platforms
-	s.ios.platform = :ios
-	s.ios.deployment_target = "7.0"
+	s.platform  = :ios, '7.0'
 
 	# A short (maximum 140 characters) description of the Pod
 	s.summary = "Applicaster SDK"
