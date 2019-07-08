@@ -56,9 +56,9 @@ Pod::Spec.new do |s|
 
 	# Applicater's Private Pod frameworks
 
-	s.dependency 'ZappPlugins', '~> 8.2.0'
+	s.dependency 'ZappPlugins', '~> 8.4.0'
 	s.dependency 'ZappAnalyticsPluginsSDK', '~> 7.0.0'
 	s.dependency 'ZappPushPluginsSDK', '~> 7.0.0'
 	s.dependency 'ZappLoginPluginsSDK', '~> 7.0.0'
-	s.dependency 'ZappGeneralPluginsSDK', '~> 7.2.0'
+	s.dependency 'ZappGeneralPluginsSDK', '~> 7.3.0'
 end
