@@ -1,24 +1,44 @@
 Pod::Spec.new do |s|
 	s.name = "ZappPlugins"
 	s.version = "9.1.4"
+	s.platform = :ios, :tvos
 	s.ios.deployment_target = "10.0"
-	s.tvos.deployment_target = "10.0"
-
 	s.summary = "ZappPlugins"
 	s.description = "Zapp Plugins store Protocol and Managers that relevant for Applicaster Zapp Plugin System"
 	s.homepage = "https://applicaster.com"
 	s.license = ''
 	s.author = "Applicaster LTD."
-	s.source       = {
-			"http" => "https://dl.bintray.com/applicaster-ltd/pods/ZappPlugins_Framework_9.1.4_496297388bc90b3d66306c7da7dd76c28a94782f.zip"
+	s.source = {
+		 :git => 'git@github.com:applicaster/ZappPlugins-iOS.git',
+		 :tag => s.version.to_s
   }
-
 	s.frameworks = 'AVFoundation'
-	s.ios.vendored_frameworks = 'Frameworks/iOS/ZappPlugins.framework'
-	s.tvos.vendored_frameworks = 'Frameworks/tvOS/ZappPlugins.framework'
 
-	s.xcconfig = { 'ENABLE_BITCODE' => 'YES',
-								 'SWIFT_VERSION' => '5.0',
-							 	 'ENABLE_TESTABILITY' => 'YES',
-							 	 'OTHER_CFLAGS'  => '-fembed-bitcode'}
+	s.ios.source_files  = 'ZappPlugins/**/*.{h,m,swift}'
+
+	s.xcconfig = {  'ENABLE_BITCODE' => 'YES',
+				    'SWIFT_VERSION' => '5.0',
+					'ENABLE_TESTABILITY' => 'YES',
+					'OTHER_CFLAGS'  => '-fembed-bitcode'
+							 }
+
+	s.tvos.deployment_target = "10.0"
+	s.tvos.source_files  = [
+		'ZappPlugins/ZappHelpers/**/*.{h,m,swift}',
+		'ZappPlugins/General/Universal/**/*.swift',
+		'ZappPlugins/ZappConnector/ZAAppConnector.swift',
+		'ZappPlugins/ZappConnector/Protocols/ZAAppDelegateConnectorGenericProtocol.swift',
+		'ZappPlugins/ZappConnector/Protocols/ZAAppDelegateConnectorAnalyticsProtocol.swift',
+		'ZappPlugins/ZappConnector/ZappPlugins/Player/**/*.swift',
+	    'ZappPlugins/PluginPresenter/ZPPluginPresenterManager.swift',
+	    'ZappPlugins/PluginPresenter/Protocols/ZPPluginPresenterProtocol.swift',
+	    'ZappPlugins/PlayerDependantsPlugins/**/*.swift',
+	    'ZappPlugins/QBPlayer/**',
+ 	]
+ 	s.tvos.exclude_files = [
+		'ZappPlugins/ZappHelpers/Swift/iOS/**/*.{h,m,swift}',
+		'ZappPlugins/ZappHelpers/ObjectiveC/iOS/**/*.{h,m,swift}',
+		'ZappPlugins/ZappConnector/ZappPlugins/Player/ZPPlayerManager.swift'
+	]
+
 end
