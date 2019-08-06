@@ -34,7 +34,7 @@ Pod::Spec.new do |s|
 
 	s.xcconfig = {
 		'OTHER_CFLAGS'  => '-fembed-bitcode',
-		'OTHER_LDFLAGS' => '$(inherited) -fembed-bitcode -framework "TwitterKit" -framework "TwitterCore"',
+		'OTHER_LDFLAGS' => '$(inherited) -framework "TwitterKit" -framework "TwitterCore"',
 		'ENABLE_BITCODE' => 'YES',
 		'GCC_WARN_UNDECLARED_SELECTOR' => "NO",
 		'OTHER_SWIFT_FLAGS[config=Debug]' => '$(inherited) -D DEBUG',
