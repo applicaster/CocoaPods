@@ -57,5 +57,5 @@ Pod::Spec.new do |s|
 	s.dependency 'ZappAnalyticsPluginsSDK', '~> 8.0.4'
 	s.dependency 'ZappPushPluginsSDK', '~> 8.0.2'
 	s.dependency 'ZappLoginPluginsSDK', '~> 8.0.1'
-	s.dependency 'ZappGeneralPluginsSDK', '~> 8.0.2'
+	s.dependency 'ZappGeneralPluginsSDK', '~> 8.1.0'
 end
