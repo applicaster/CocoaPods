@@ -53,7 +53,7 @@ Pod::Spec.new do |s|
   s.dependency 'TwitterKit', '= 3.4.2'
 
 	# Applicater's Private Pod frameworks
-	s.dependency 'ZappPlugins', '~> 9.2.0'
+	s.dependency 'ZappPlugins', '~> 9.3.0'
 	s.dependency 'ZappAnalyticsPluginsSDK', '~> 8.0.4'
 	s.dependency 'ZappPushPluginsSDK', '~> 8.0.2'
 	s.dependency 'ZappLoginPluginsSDK', '~> 8.0.1'
