@@ -16,6 +16,6 @@ Pod::Spec.new do |s|
 
 	s.xcconfig = {'GCC_PREPROCESSOR_DEFINITIONS' => '$(inherited) COMPONENTS_STYLE=1',
 								'OTHER_SWIFT_FLAGS' => '$(inherited) "-D" "COMPONENTS_STYLE"',
-								'SWIFT_VERSION' => '5.0'
+								'SWIFT_VERSION' => '5.1'
 	}
 end
