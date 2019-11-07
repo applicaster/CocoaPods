@@ -38,7 +38,7 @@ Pod::Spec.new do |s|
 		'ENABLE_BITCODE' => 'YES',
 		'GCC_WARN_UNDECLARED_SELECTOR' => "NO",
 		'OTHER_SWIFT_FLAGS[config=Debug]' => '$(inherited) -D DEBUG',
-		'SWIFT_VERSION' => '5.0',
+		'SWIFT_VERSION' => '5.1',
 	}
 
 	# Public frameworks
