@@ -31,7 +31,7 @@ Pod::Spec.new do |s|
 
 	s.xcconfig = { 'ENABLE_BITCODE' => 'YES',
 							   'OTHER_SWIFT_FLAGS[config=Debug]' => '$(inherited) -D DEBUG',
-								 'SWIFT_VERSION' => '5.0',
+								 'SWIFT_VERSION' => '5.1',
 							 	 'OTHER_CFLAGS'  => '-fembed-bitcode'}
 
 	s.dependency 'ApplicasterSDK', '~> 11.0.0'
