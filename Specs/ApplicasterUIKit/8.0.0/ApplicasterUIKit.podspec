@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
     	"http" => "https://dl.bintray.com/applicaster-ltd/pods/ApplicasterUIKit_Framework_8.0.0_95ede4331440686ceb8cb41c48e761ddf3d10577.zip"
 	}
 	s.xcconfig =  {
-                'SWIFT_VERSION' => '5.0',
+                'SWIFT_VERSION' => '5.1',
 								'OTHER_CFLAGS'  => '-fembed-bitcode',
 								'ENABLE_BITCODE' => 'YES'
               }
