@@ -37,5 +37,7 @@ Pod::Spec.new do |s|
 	s.dependency 'ApplicasterSDK'
 	s.dependency 'ApplicasterUIKit', '~> 8.1.1'
 	s.dependency 'ZappPlugins'
+	s.dependency 'Kingfisher'
+
 
 end
