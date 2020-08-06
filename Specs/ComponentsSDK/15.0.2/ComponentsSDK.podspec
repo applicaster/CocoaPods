@@ -34,7 +34,7 @@ Pod::Spec.new do |s|
 								 'SWIFT_VERSION' => '5.1',
 							 	 'OTHER_CFLAGS'  => '-fembed-bitcode'}
 
-	s.dependency 'ApplicasterSDK', '~> 12.6.0'
+	s.dependency 'ApplicasterSDK', '~> 12.6.1'
 	s.dependency 'ApplicasterUIKit', '~> 8.3.0'
 	s.dependency 'ZappPlugins', '~> 11.8.0' 
 
