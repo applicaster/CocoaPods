@@ -17,7 +17,6 @@ Pod::Spec.new do |s|
               }
 	s.requires_arc = true
 	s.vendored_frameworks = 'ApplicasterUIKit.xcframework'
-	s.static_framework = true
 	s.frameworks = 'AVFoundation', 'AVKit'
 	s.dependency 'ZappPlugins'
 end
