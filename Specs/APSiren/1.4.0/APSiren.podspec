@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.license     = 'CMPS'
 	s.author     = "Applicaster LTD."
 	s.source     = {
-      "http" => "https://dl.bintray.com/applicaster-ltd/pods/APSiren_Framework_1.4.0_1cff1cf865d01646357d4231dd068cb963aba77d.zip"
+      "http" => "https://assets-production.applicaster.com/zapp/helpers/sdks/APSiren/APSiren_Framework_1.4.0_1cff1cf865d01646357d4231dd068cb963aba77d.zip"
   }
   s.vendored_frameworks = 'APSiren.framework'
   s.static_framework = true
