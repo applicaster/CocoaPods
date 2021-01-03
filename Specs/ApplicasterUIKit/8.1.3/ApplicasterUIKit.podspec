@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
 	s.license = ''
 	s.author = "Applicaster LTD"
 	s.source = {
-    	"http" => "https://dl.bintray.com/applicaster-ltd/pods/ApplicasterUIKit_Framework_8.1.3_4c500d078c523ba2b4ebaaec2be97ef667e0fbc9.zip"
+    	"http" => "https://assets-production.applicaster.com/zapp/helpers/sdks/ApplicasterUIKit/ApplicasterUIKit_Framework_8.1.3_4c500d078c523ba2b4ebaaec2be97ef667e0fbc9.zip"
 	}
 	s.xcconfig =  {
                 'SWIFT_VERSION' => '5.1',
