@@ -25,5 +25,5 @@ Pod::Spec.new do |s|
 	s.xcconfig = { 'ENABLE_TESTABILITY' => 'YES' }
 
 	s.dependency 'ZappCore'
-
+	s.swift_versions = '5.9'
 end
